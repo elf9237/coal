@@ -1,0 +1,124 @@
+.setttleAccounts {
+  color: #666666;
+  margin-top: 20px;
+}
+.setttleAccounts > .head > h2 {
+  font-size: 16px;
+  display: block;
+}
+.setttleAccounts > .head > h2 a {
+  color: #26a0da;
+  margin-left: 25px;
+  font-size: 12px;
+}
+.setttleAccounts > .head > ul {
+  margin-top: 10px;
+}
+.setttleAccounts > .head > ul li {
+  cursor: pointer;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  position: relative;
+  width: 900px;
+  align-items: center;
+  font-size: 12px;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+}
+.setttleAccounts > .head > ul li.selected {
+  background-color: #f4fafd;
+}
+.setttleAccounts > .head > ul li.default .isdefault {
+  display: inline-block;
+}
+.setttleAccounts > .head > ul li.default .option {
+  display: none;
+}
+.setttleAccounts > .head > ul li input,
+.setttleAccounts > .head > ul li .name,
+.setttleAccounts > .head > ul li .address,
+.setttleAccounts > .head > ul li .phoneNumber {
+  margin: 0 10px 0 0;
+}
+.setttleAccounts > .head > ul li .isdefault {
+  display: none;
+  height: 20px;
+  width: 80px;
+  line-height: 20px;
+  text-align: center;
+  color: #666666;
+  cursor: pointer;
+  background: #cccccc;
+}
+.setttleAccounts > .head > ul li .option {
+  position: absolute;
+  right: 37px;
+  top: 0px;
+}
+.setttleAccounts > .head > ul li .option a {
+  color: #26a0da;
+  margin-left: 10px;
+}
+.setttleAccounts > .head > ul li .option a:hover {
+  color: #26a0da;
+}
+.setttleAccounts .moreAddress {
+  margin-top: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.setttleAccounts .moreAddress.in i {
+  background: url('../images/icon-up-gary.png') no-repeat;
+}
+.setttleAccounts .moreAddress i {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.setttleAccounts .procureList {
+  margin-top: 30px;
+}
+.setttleAccounts .procureList .tableContent {
+  margin-top: 20px;
+}
+.setttleAccounts .procureList .tableContent .labeldisk {
+  margin-top: 15px;
+}
+.setttleAccounts .procureList .tableContent .labeldisk p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.setttleAccounts .procureList .tableContent .labeldisk > div input {
+  text-indent: 15px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  width: 800px;
+  box-sizing: border-box;
+}
+.setttleAccounts .procureList .tableContent .labeldisk > div span {
+  margin-left: 20px;
+}
+.setttleAccounts .procureList h2 {
+  font-size: 20px;
+}
+.setttleAccounts .settle {
+  margin-top: 40px;
+  text-align: right;
+}
+.setttleAccounts .settle p {
+  vertical-align: middle;
+}
+.setttleAccounts .settle p span {
+  font-size: 20px;
+  color: #f35f5f;
+}
+.setttleAccounts .settle button {
+  width: 160px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  background: #f35f5f;
+  border-radius: 5px;
+  margin-top: 25px;
+}

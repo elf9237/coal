@@ -1,0 +1,262 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: url("../images/index_bg.png") center top no-repeat;
+  background-size: cover;
+}
+.index_bg {
+  width: 100%;
+  height: 100%;
+}
+.indexContent {
+  padding: 50px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 500px;
+  box-sizing: border-box;
+  left: 50%;
+  margin-left: -250px;
+  top: 50%;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.indexContent .formBtn {
+  width: 100%;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  background: #26a0da;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+}
+.indexContent .golink {
+  text-align: right;
+  margin-top: 13px;
+  color: #aaaaaa;
+  display: block;
+}
+.indexContent.login {
+  position: relative;
+  height: 500px;
+  margin-top: -250px;
+}
+.indexContent.login .login_error {
+  display: none;
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  left: 50%;
+  margin-left: -200px;
+  top: 313px;
+  color: #f5255e;
+}
+.indexContent.login .login_error .icon-error {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.indexContent.login .content {
+  margin-top: 40px;
+}
+.indexContent.login .content .field {
+  margin-bottom: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 30px;
+  background: #fff;
+}
+.indexContent.login .content .field i.icon-filed {
+  margin-right: 10px;
+}
+.indexContent.login .content .field input {
+  width: 300px;
+}
+.indexContent.login .content .text {
+  font-size: 14px;
+  margin: 5px 0 10px;
+  display: flex;
+  color: #aaaaaa;
+  justify-content: space-between;
+  align-items: center;
+}
+.indexContent.login .content .text .rember {
+  display: flex;
+  align-items: center;
+}
+.indexContent.login .content .text .rember i {
+  cursor: pointer;
+  margin-right: 10px;
+  width: 20px;
+  display: inline-block;
+  height: 20px;
+  border-radius: 50%;
+}
+.indexContent.login .content .text .rember i.on {
+  background: url("../images/icon-remeber.png") center center no-repeat;
+}
+.indexContent.login .content .text a {
+  color: #aaaaaa;
+}
+.indexContent.login .content .text a:hover {
+  color: #aaaaaa;
+}
+.indexContent.register {
+  height: 670px;
+  margin-top: -335px;
+}
+.indexContent.register .content .field {
+  display: block;
+  position: relative;
+}
+.indexContent.register .content .field input {
+  text-indent: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.indexContent.register .content .field select {
+  height: 50px;
+  border-radius: 0;
+  width: 100%;
+}
+.indexContent.register .content .field #distpicker {
+  display: flex;
+}
+.indexContent.register .content .field #distpicker .form-group {
+  flex: 1;
+  overflow: hidden;
+  margin-right: 5px;
+}
+.indexContent.register .content .field #distpicker .form-group:last-child {
+  margin-right: 0px;
+}
+.indexContent.register .content .field .code {
+  display: inline-block;
+  width: 128px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #fff;
+  margin-left: 2px;
+  position: relative;
+  vertical-align: middle;
+}
+.indexContent.register .content .field .code img {
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -55px;
+  margin-top: -15px;
+}
+.indexContent.register .content .field .icon-error {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: -36px;
+}
+.indexContent.register .content .text .rember {
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.indexContent.register .content .text .rember i {
+  margin-right: 10px;
+}
+.indexContent.register .content .text .rember i.on {
+  background: url("../images/icon-remeber.png") center center no-repeat;
+}
+.indexContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -ms-filter: blur(8px);
+  -o-filter: blur(8px);
+  filter: blur(8px);
+  z-index: -1;
+  margin: -30px;
+  background-image: url("../images/index_bg.png");
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.indexContent .head {
+  text-align: center;
+}
+.indexContent .content {
+  margin-top: 40px;
+}
+.indexContent .content .field {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+}
+.indexContent .content .field:hover .close {
+  display: inline-block;
+}
+.indexContent .content .field input {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.indexContent .content .field .close {
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon-indxClose.png") center center no-repeat;
+  top: 16px;
+  right: 20px;
+}
+.indexContent .content .field .close:hover {
+  display: block;
+}
+.registerErrorBox {
+  position: absolute;
+  width: 500px;
+  box-sizing: border-box;
+  left: 50%;
+  margin-left: -250px;
+  top: 50%;
+  height: 670px;
+  margin-top: -335px;
+  z-index: 1;
+  border-radius: 5px;
+}
+.registerErrorBox .errorHint {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 500px;
+}
+.registerErrorBox .errorHint span {
+  padding: 5px 10px;
+  background: #f5255e;
+  color: #fff;
+}
+.registerErrorBox .errorHint.phone-error {
+  top: 165px;
+}
+.registerErrorBox .errorHint.psdOne-error {
+  top: 235px;
+}
+.registerErrorBox .errorHint.psdTwo-error {
+  top: 304px;
+}
+.registerErrorBox .errorHint.code-error {
+  top: 443px;
+}

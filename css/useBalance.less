@@ -1,0 +1,346 @@
+// out: ../css/useBalance.css, sourcemap: false, compress: false
+@charset "utf-8";
+// 公用样式
+html{
+  height: 100%
+}
+body {margin:0; padding:0; font:12px "微软雅黑",san-serif; color:#666666;display: flex;flex-direction: column;height: 100%;overflow: auto;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+input,textarea,select{font-family:"宋体"; color:#666}
+table,td,tr,th{font-size:12px;}
+table{border-collapse: collapse;}
+li{list-style-type:none;}
+img{vertical-align:top;border:0;}
+ol,ul {list-style:none;}
+h1,h2,h3,h4,h5,h6 {font-size:12px; font-weight:normal;}
+address,cite,code,em,th {font-weight:normal; font-style:normal;}
+a{text-decoration: none;}
+a:hover{
+  text-decoration: none;
+}
+
+.icon-tel {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('../images/icon-tel.png') no-repeat;
+  vertical-align: middle;
+}
+.icon-help{
+  display: inline-block;
+  width: 20px;
+  height:20px;
+  background: url('../images/icon-help.png') no-repeat;
+  vertical-align: middle;
+}
+.icon-qq{
+  display: inline-block;
+  width: 19px;
+  height:20px;
+  background: url('../images/icon-qq.png') no-repeat;
+  vertical-align: middle;
+}
+.icon-user{
+  display: inline-block;
+  width: 20px;
+  height:20px;
+  background: url('../images/icon-user.png') no-repeat;
+  vertical-align: middle;
+}
+.useBalance {
+  color: #666666;
+  .welcom{
+    .welcomContent{
+      width:1250px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      .left{
+        i{
+          margin-right: 5px;
+        }
+        display: flex;
+        align-items: center;
+        .welcomTxt{
+          margin-right: 15px;
+        }
+        .phoneNumber{
+          font-style:normal;
+          color:#26a0da;
+        }
+      }
+      .right{
+        a {
+          margin-left: 10px;
+          &:after{
+            content:"|";
+            margin-left: 10px;
+            color:#cccccc;
+          }
+        }
+      }
+    }
+    height: 30px;
+    line-height: 30px;
+    background: #f6f6f6;
+  }
+  .head{
+    height: 90px;
+    line-height: 90px;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    .headContent {
+      display: flex;
+      align-items: center;
+      width: 1000px;
+      margin: 0 auto;
+      span {
+        margin-left: 25px;
+        padding-left: 25px;
+        border-left:1px solid #ccc;
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
+        font-size: 20px;
+      }
+    }
+  }
+  .BalanceContent {
+    width: 1000px;
+    margin: 0 auto;
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 40px;
+      position: relative;
+      img{
+        width: 100px;
+        height: 100px;
+      }
+      .info{
+        margin-left: 30px;
+        h2{
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+        p {
+          font-size:12px;
+          margin-bottom: 10px;
+        }
+        a{
+          color:#26a0da;
+          &:hover{
+            color:#26a0da;
+          }
+        }
+      }
+      .sum{
+        right: 0px;
+        top: 56px;
+        position: absolute;
+        text-align: right;
+        p{
+          margin-bottom: 7px;
+          span {
+            color:#f35f5f;
+            font-size: 20px;
+            margin:0 5px;
+            font-weight: 600;
+          }
+        }
+        a{
+          color:#26a0da;
+          &:hover{
+            color:#26a0da;
+          }
+        }
+      }
+    }
+    .payStyle{
+      margin-top: 40px;
+      h2{
+        font-size: 20px;
+      }
+      .balanceType {
+        padding: 10px 20px 20px;
+        background-color: #eeeeee;
+        margin-top: 20px;
+        font-size: 14px;
+        .top{
+          padding-bottom: 10px;
+          border-bottom:1px solid #cccccc;
+        }
+        .balanceInfo {
+          margin-top: 15px;
+          // display: flex;
+          // align-items: center;
+          vertical-align: middle;
+          display: none;
+          span{
+            font-weight: 600;
+            color:#f35f5f;
+            margin: 0 30px 0 10px;
+          }
+
+        }
+        .money{
+          margin-top: 10px;
+          input {
+            height:40px;
+            line-height: 40px;
+            width: 200px;
+            text-indent: 10px;
+            margin-right: 20px;
+            box-sizing: border-box;
+          }
+          button.queryMoney {
+            color:#fff;
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            background: #f35f5f;
+          }
+        }
+        .hint{
+          font-size: 12px;
+          a {
+            color:#26a0da;
+          }
+        }
+      }
+    }
+    .bankPay {
+      margin-top: 20px;
+      background-color: #eeeeee;
+      padding: 20px;
+      h2{
+        font-size:14px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      ul {
+        overflow:hidden;
+        li{
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          float:left;
+          width: 20%;
+          text-align: left;
+          margin-top: 15px;
+          input {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .otherPay{
+      margin-top: 20px;
+      background-color: #eeeeee;
+      padding: 20px;
+      h2{
+        font-size:14px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      ul {
+        overflow: auto;
+        li{
+          font-size: 20px;
+          padding-right: 15px;
+          margin-right: 15px;
+          line-height: 55px;
+          height: 55px;
+          cursor: pointer;
+          &::after{
+            content: '|';
+            color:#cccccc;
+            margin-left: 15px;
+          }
+          &:last-child{
+            &::after{
+              content:"";
+            }
+          }
+          &.on{
+            color:#26a0da;
+          }
+          float:left
+        }
+      }
+    }
+    .successPay{
+      width: 1000px;
+      margin: 120px auto 0;
+      display: flex;
+      justify-content: center;
+      .successHint{
+        margin-left: 15px;
+        h2{
+          font-size: 20px;
+          margin: 10px 0;
+        }
+        p{
+          font-size: 12px;
+          margin-top: 6px
+        }
+      }
+    }
+    .goUserCenter{
+      a{
+        &.continue{
+          width:160px;
+          margin-right: 20px;
+        }
+        &.logout{
+          width: 160px;
+          box-sizing: border-box;
+          border:1px solid #cccccc;
+          background: #eeeeee;
+          color:#666666;
+        }
+        cursor: pointer;
+        width: 200px;
+        height: 40px;
+        color:#fff;
+        border: none;
+        border-radius: 5px;
+        background: #f35f5f;
+        display: inline-block;
+        line-height: 40px;
+        font-size: 14px;
+      }
+      margin: 110px auto 0;
+      text-align: center;
+
+    }
+  }
+  .footer{
+    width: 1000px;
+    margin: 50px auto 70px;
+    text-align: right;
+    p{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      span{
+        font-size: 20px;
+        margin-left: 10px;
+        color: #f35f5f;
+        font-weight: 600;
+      }
+    }
+    button{
+      border: none;
+      width: 160px;
+      height: 40px;
+      line-height: 40px;
+      color: #fff;
+      background: #f35f5f;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  }
+}

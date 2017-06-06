@@ -1,0 +1,130 @@
+// out: ../css/settleAccounts.css, sourcemap: false, compress: false
+.setttleAccounts{
+  color:#666666;
+  margin-top: 20px;
+  >.head {
+    >h2{
+      font-size: 16px;
+      display: block;
+      a {
+        color:#26a0da;
+        margin-left: 25px;
+        font-size: 12px;
+      }
+    }
+    >ul {
+      margin-top: 10px;
+      li{
+        &.selected{
+          background-color: #f4fafd;
+        }
+        &.default {
+          .isdefault {
+            display: inline-block;
+          }
+          .option {
+            display: none;
+          }
+        }
+        cursor: pointer;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        position: relative;
+        width: 900px;
+        align-items: center;
+        font-size: 12px;
+        display: flex;
+        height: 40px;
+        line-height: 40px;
+        input,.name,.address,.phoneNumber{
+          margin: 0 10px 0 0;
+        }
+        .isdefault {
+          display: none;
+          height: 20px;
+          width: 80px;
+          line-height: 20px;
+          text-align: center;
+          color:#666666;
+          cursor: pointer;
+          background:#cccccc;
+        }
+        .option {
+          position: absolute;
+          right: 37px;
+          top: 0px;
+          a{
+            color:#26a0da;
+            &:hover{
+              color:#26a0da;
+            }
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .moreAddress {
+    margin-top: 20px;
+    display:inline-block;
+    cursor: pointer;
+    &.in {
+      i {
+        background: url('../images/icon-up-gary.png') no-repeat;
+      }
+    }
+    i {
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+  }
+  .procureList {
+    .tableContent{
+      margin-top: 20px;
+      .labeldisk {
+        margin-top: 15px;
+        p{
+          font-size: 12px;
+          margin-bottom:10px;
+        }
+        >div {
+          input {
+            text-indent: 15px;
+            height: 40px;
+            line-height: 40px;
+            border:1px solid #ccc;
+            width: 800px;
+            box-sizing: border-box;
+          }
+          span{
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    margin-top: 30px;
+    h2 {
+      font-size: 20px;
+    }
+  }
+  .settle {
+    margin-top: 40px;
+    text-align:right;
+    p {
+      vertical-align: middle;
+      span {
+        font-size: 20px;
+        color:#f35f5f;
+      }
+    }
+    button {
+      width: 160px;
+      height: 40px;
+      border:none;
+      color:#fff;
+      background: #f35f5f;
+      border-radius: 5px;
+      margin-top: 25px;
+    }
+  }
+}

@@ -1,0 +1,179 @@
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+.userInfo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.userInfo .info h2 {
+  display: flex;
+  font-size: 20px;
+  color: #666666;
+  font-weight: 400;
+}
+.userInfo .info a {
+  font-size: 12px;
+  margin-left: 15px;
+  color: #43addf;
+  vertical-align: middle;
+}
+.userInfo .info p {
+  margin-top: 10px;
+}
+.userInfo .historyInfo {
+  margin-left: 80px;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #eeeeee;
+}
+.userInfo .historyInfo dl {
+  display: flex;
+  align-items: center;
+}
+.userInfo .historyInfo dl dt {
+  flex: 1;
+  margin-right: 45px;
+  padding-right: 15px;
+  border-right: 1px solid #cccccc;
+}
+.userInfo .historyInfo dl dt > p {
+  text-align: center;
+}
+.userInfo .historyInfo dl dt > p.txt-label {
+  margin-top: 7px;
+  font-weight: 600;
+}
+.userInfo .historyInfo dl dd {
+  flex: 1;
+}
+.userInfo .historyInfo dl dd .num {
+  display: flex;
+  align-items: center;
+}
+.userInfo .historyInfo dl dd .num span {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.opitonBtn {
+  margin-top: 60px;
+  display: flex;
+}
+.opitonBtn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.opitonBtn a i {
+  margin-right: 8px;
+}
+.opitonBtn a.buyBtn {
+  background: #26a0da;
+}
+.opitonBtn a.sellBtn {
+  background: #24cbbf;
+}
+.tadayInfo {
+  margin-top: 60px;
+  background: #eeeeee;
+  padding: 20px;
+  display: flex;
+}
+.tadayInfo .d-content {
+  flex: 1;
+  box-sizing: border-box;
+}
+.tadayInfo .d-content.left {
+  box-sizing: border-box;
+  border-right: 1px solid #cccccc;
+}
+.tadayInfo .d-content.left .money {
+  font-size: 36px;
+  color: #26a0da;
+  margin: 20px 0;
+}
+.tadayInfo .d-content.left .money span {
+  font-size: 60px;
+  font-weight: 600;
+}
+.tadayInfo .d-content.left .sum {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.tadayInfo .d-content.left .sum > span {
+  margin-right: 50px;
+}
+.tadayInfo .d-content.left .sum > span > i {
+  font-style: normal;
+  margin-left: 10px;
+}
+.tadayInfo .d-content.right {
+  padding-left: 25px;
+}
+.tadayInfo .d-content.right .infoData ul {
+  display: flex;
+}
+.tadayInfo .d-content.right .infoData ul li {
+  flex: 1;
+  text-align: left;
+}
+.tadayInfo .d-content.right .infoData ul li > h2 {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 60px;
+  color: #26a0da;
+}
+.tadayInfo .d-content.right .infoData ul li > strong {
+  margin-top: 20px;
+}
+.tadayInfo .d-content.right .infoData ul li > p {
+  margin-top: 10px;
+}
+.tadayInfo .d-content > h2 {
+  display: flex;
+  align-items: center;
+}
+.tadayInfo .d-content > h2 > i {
+  margin-right: 10px;
+}
+.tadayInfo .d-content > h2 span {
+  margin-left: 8px;
+  font-size: 20px;
+}
+.orderDynamic {
+  margin-top: 30px;
+  display: flex;
+}
+.orderDynamic .tableContent {
+  margin-top: 20px;
+}
+.orderDynamic .top {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.orderDynamic .top i {
+  margin-right: 10px;
+}
+.orderDynamic .left {
+  flex: 1;
+  box-sizing: border-box;
+  margin-right: 15px;
+}
+.orderDynamic .right {
+  flex: 1;
+  box-sizing: border-box;
+  margin-left: 15px;
+}

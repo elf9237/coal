@@ -1,0 +1,142 @@
+.main {
+  flex: 1;
+  display: flex;
+}
+.main .rightContent .content .fieldItem {
+  padding: 50px 0;
+}
+.main .rightContent .content .fieldItem .blockFour {
+  display: none;
+  width: 1024px;
+}
+.main .rightContent .content .fieldItem .blockText {
+  font-size: 20px;
+  margin: 40px 0px 20px;
+}
+.main .rightContent .content .fieldItem .fillField {
+  margin-bottom: 20px;
+}
+.main .rightContent .content .fieldItem .fillField .addStore {
+  margin-left: 10px;
+  color: #aaaaaa;
+  vertical-align: middle;
+}
+.main .rightContent .content .fieldItem .fillField.inlineField {
+  display: inline-block;
+  margin-right: 30px;
+}
+.main .rightContent .content .fieldItem .fillField .txt {
+  font-size: 14px;
+  font-weight: normal;
+  color: #4c4c4c;
+  text-align: right;
+}
+.main .rightContent .content .fieldItem .fillField .txt .dot {
+  font-style: normal;
+  color: #f5255e;
+  margin-right: 2px;
+}
+.main .rightContent .content .fieldItem .blockFive .blockText .fillField.inlineField.switchStyle {
+  margin: 0;
+}
+.main .rightContent .content .fieldItem .blockFive .blockText span.labelText {
+  font-size: 12px;
+  margin: 0 10px 0 20px;
+  vertical-align: middle;
+}
+.main .rightContent .content .fieldItem .blockFive .setPrice > p.selectArea {
+  display: none;
+}
+.main .rightContent .content .fieldItem .blockFive .setPrice > p.selectArea > input {
+  vertical-align: middle;
+}
+.main .rightContent .content .fieldItem .blockFive .setPrice > p.selectArea span {
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.main .rightContent .content .fieldItem .blockFive .setPrice .noSetArea {
+  margin-top: 20px;
+}
+.main .rightContent .content .fieldItem .blockFive .setPrice .areaTwoPrice,
+.main .rightContent .content .fieldItem .blockFive .setPrice .areaOnePrice {
+  display: none;
+}
+.main .rightContent .content .fieldItem .blockFive .setPrice .priceTting {
+  margin-top: 10px;
+}
+.main .rightContent .content .fieldItem .blockFive .setPrice .priceTting > h2 {
+  background-color: #eeeeee;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+.main .rightContent .content .fieldItem .blockFive .setPrice .priceTting .fieldPrice {
+  padding: 15px 15px 0 15px;
+  border: 1px solid #cccccc;
+  border-top: none;
+}
+.main .rightContent .content .fieldItem .blockFive .setPrice .publicField {
+  margin-top: 15px;
+}
+.main .rightContent .content .fieldItem .uploadingImg ul {
+  overflow: auto;
+}
+.main .rightContent .content .fieldItem .uploadingImg ul li {
+  cursor: pointer;
+  float: left;
+  margin-bottom: 10px;
+  position: relative;
+  margin-right: 20px;
+  background-color: #eeeeee;
+  height: 260px;
+  width: 260px;
+}
+.main .rightContent .content .fieldItem .uploadingImg ul li .icon-add {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  z-index: 1;
+}
+.main .rightContent .content .fieldItem .uploadingImg ul li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.main .rightContent .content .fieldItem .uploadingImg ul li .foot {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background: url("../images/imgloadBg.png") repeat;
+  z-index: 3;
+  padding: 0 18px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.main .rightContent .content .fieldItem .uploadingImg ul li .foot > span {
+  display: flex;
+  align-items: center;
+}
+.main .rightContent .content .fieldItem .uploadingImg ul li .foot i {
+  margin-right: 10px;
+}
+.main .rightContent .content .option {
+  margin-top: 30px;
+}
+.main .rightContent .content .option button {
+  margin-right: 20px;
+}
+@media screen and (max-width: 1366px) {
+  .main .rightContent .content .fieldItem .blockFour {
+    width: auto;
+  }
+}

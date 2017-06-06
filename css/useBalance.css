@@ -1,0 +1,403 @@
+@charset "utf-8";
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: 12px "微软雅黑", san-serif;
+  color: #666666;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+p {
+  padding: 0;
+  margin: 0;
+}
+input,
+textarea,
+select {
+  font-family: "宋体";
+  color: #666;
+}
+table,
+td,
+tr,
+th {
+  font-size: 12px;
+}
+table {
+  border-collapse: collapse;
+}
+li {
+  list-style-type: none;
+}
+img {
+  vertical-align: top;
+  border: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 12px;
+  font-weight: normal;
+}
+address,
+cite,
+code,
+em,
+th {
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.icon-tel {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('../images/icon-tel.png') no-repeat;
+  vertical-align: middle;
+}
+.icon-help {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../images/icon-help.png') no-repeat;
+  vertical-align: middle;
+}
+.icon-qq {
+  display: inline-block;
+  width: 19px;
+  height: 20px;
+  background: url('../images/icon-qq.png') no-repeat;
+  vertical-align: middle;
+}
+.icon-user {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../images/icon-user.png') no-repeat;
+  vertical-align: middle;
+}
+.useBalance {
+  color: #666666;
+}
+.useBalance .welcom {
+  height: 30px;
+  line-height: 30px;
+  background: #f6f6f6;
+}
+.useBalance .welcom .welcomContent {
+  width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.useBalance .welcom .welcomContent .left {
+  display: flex;
+  align-items: center;
+}
+.useBalance .welcom .welcomContent .left i {
+  margin-right: 5px;
+}
+.useBalance .welcom .welcomContent .left .welcomTxt {
+  margin-right: 15px;
+}
+.useBalance .welcom .welcomContent .left .phoneNumber {
+  font-style: normal;
+  color: #26a0da;
+}
+.useBalance .welcom .welcomContent .right a {
+  margin-left: 10px;
+}
+.useBalance .welcom .welcomContent .right a:after {
+  content: "|";
+  margin-left: 10px;
+  color: #cccccc;
+}
+.useBalance .head {
+  height: 90px;
+  line-height: 90px;
+  background: #eeeeee;
+  display: flex;
+  align-items: center;
+}
+.useBalance .head .headContent {
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+.useBalance .head .headContent span {
+  margin-left: 25px;
+  padding-left: 25px;
+  border-left: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 20px;
+}
+.useBalance .BalanceContent {
+  width: 1000px;
+  margin: 0 auto;
+}
+.useBalance .BalanceContent .title {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  position: relative;
+}
+.useBalance .BalanceContent .title img {
+  width: 100px;
+  height: 100px;
+}
+.useBalance .BalanceContent .title .info {
+  margin-left: 30px;
+}
+.useBalance .BalanceContent .title .info h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.useBalance .BalanceContent .title .info p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.useBalance .BalanceContent .title .info a {
+  color: #26a0da;
+}
+.useBalance .BalanceContent .title .info a:hover {
+  color: #26a0da;
+}
+.useBalance .BalanceContent .title .sum {
+  right: 0px;
+  top: 56px;
+  position: absolute;
+  text-align: right;
+}
+.useBalance .BalanceContent .title .sum p {
+  margin-bottom: 7px;
+}
+.useBalance .BalanceContent .title .sum p span {
+  color: #f35f5f;
+  font-size: 20px;
+  margin: 0 5px;
+  font-weight: 600;
+}
+.useBalance .BalanceContent .title .sum a {
+  color: #26a0da;
+}
+.useBalance .BalanceContent .title .sum a:hover {
+  color: #26a0da;
+}
+.useBalance .BalanceContent .payStyle {
+  margin-top: 40px;
+}
+.useBalance .BalanceContent .payStyle h2 {
+  font-size: 20px;
+}
+.useBalance .BalanceContent .payStyle .balanceType {
+  padding: 10px 20px 20px;
+  background-color: #eeeeee;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.useBalance .BalanceContent .payStyle .balanceType .top {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+.useBalance .BalanceContent .payStyle .balanceType .balanceInfo {
+  margin-top: 15px;
+  vertical-align: middle;
+  display: none;
+}
+.useBalance .BalanceContent .payStyle .balanceType .balanceInfo span {
+  font-weight: 600;
+  color: #f35f5f;
+  margin: 0 30px 0 10px;
+}
+.useBalance .BalanceContent .payStyle .balanceType .money {
+  margin-top: 10px;
+}
+.useBalance .BalanceContent .payStyle .balanceType .money input {
+  height: 40px;
+  line-height: 40px;
+  width: 200px;
+  text-indent: 10px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+.useBalance .BalanceContent .payStyle .balanceType .money button.queryMoney {
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background: #f35f5f;
+}
+.useBalance .BalanceContent .payStyle .balanceType .hint {
+  font-size: 12px;
+}
+.useBalance .BalanceContent .payStyle .balanceType .hint a {
+  color: #26a0da;
+}
+.useBalance .BalanceContent .bankPay {
+  margin-top: 20px;
+  background-color: #eeeeee;
+  padding: 20px;
+}
+.useBalance .BalanceContent .bankPay h2 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.useBalance .BalanceContent .bankPay ul {
+  overflow: hidden;
+}
+.useBalance .BalanceContent .bankPay ul li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 20%;
+  text-align: left;
+  margin-top: 15px;
+}
+.useBalance .BalanceContent .bankPay ul li input {
+  margin-right: 10px;
+}
+.useBalance .BalanceContent .otherPay {
+  margin-top: 20px;
+  background-color: #eeeeee;
+  padding: 20px;
+}
+.useBalance .BalanceContent .otherPay h2 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.useBalance .BalanceContent .otherPay ul {
+  overflow: auto;
+}
+.useBalance .BalanceContent .otherPay ul li {
+  font-size: 20px;
+  padding-right: 15px;
+  margin-right: 15px;
+  line-height: 55px;
+  height: 55px;
+  cursor: pointer;
+  float: left;
+}
+.useBalance .BalanceContent .otherPay ul li::after {
+  content: '|';
+  color: #cccccc;
+  margin-left: 15px;
+}
+.useBalance .BalanceContent .otherPay ul li:last-child::after {
+  content: "";
+}
+.useBalance .BalanceContent .otherPay ul li.on {
+  color: #26a0da;
+}
+.useBalance .BalanceContent .successPay {
+  width: 1000px;
+  margin: 120px auto 0;
+  display: flex;
+  justify-content: center;
+}
+.useBalance .BalanceContent .successPay .successHint {
+  margin-left: 15px;
+}
+.useBalance .BalanceContent .successPay .successHint h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.useBalance .BalanceContent .successPay .successHint p {
+  font-size: 12px;
+  margin-top: 6px;
+}
+.useBalance .BalanceContent .goUserCenter {
+  margin: 110px auto 0;
+  text-align: center;
+}
+.useBalance .BalanceContent .goUserCenter a {
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background: #f35f5f;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 14px;
+}
+.useBalance .BalanceContent .goUserCenter a.continue {
+  width: 160px;
+  margin-right: 20px;
+}
+.useBalance .BalanceContent .goUserCenter a.logout {
+  width: 160px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  background: #eeeeee;
+  color: #666666;
+}
+.useBalance .footer {
+  width: 1000px;
+  margin: 50px auto 70px;
+  text-align: right;
+}
+.useBalance .footer p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.useBalance .footer p span {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #f35f5f;
+  font-weight: 600;
+}
+.useBalance .footer button {
+  border: none;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #f35f5f;
+  border-radius: 5px;
+  margin-top: 20px;
+}

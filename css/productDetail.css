@@ -1,0 +1,273 @@
+.productDetail {
+  display: flex;
+  color: #666666;
+}
+.productDetail .left {
+  flex: 1;
+}
+.productDetail .left > .head > .title {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.productDetail .left > .head > .title > h3 {
+  font-size: 20px;
+}
+.productDetail .left > .head > .title .productInformation {
+  display: flex;
+}
+.productDetail .left > .head > .title .productInformation span {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-right: 20px;
+}
+.productDetail .left > .head > .title .productInformation span:last-child {
+  margin-right: 0;
+}
+.productDetail .left > .head > .title .productInformation span.collect {
+  cursor: pointer;
+}
+.productDetail .left > .head > .title .productInformation span.collect i {
+  margin-right: 10px;
+}
+.productDetail .left > .head > .title .productInformation span.collect i.in {
+  background: url("../images/icon-collect-in.png");
+}
+.productDetail .left > .head > .title .productInformation span i {
+  font-style: normal;
+  margin-left: 5px;
+}
+.productDetail .left > .head .productInfo {
+  margin-top: 15px;
+  padding: 30px;
+  background: #26a0da;
+}
+.productDetail .left > .head .productInfo ul {
+  display: flex;
+}
+.productDetail .left > .head .productInfo ul li {
+  flex: 1;
+  justify-content: center;
+  box-sizing: height:100px;
+  border-right: 1px solid #fff;
+  display: flex;
+  align-items: center;
+}
+.productDetail .left > .head .productInfo ul li:last-child {
+  border: none;
+}
+.productDetail .left > .head .productInfo ul li .dataC {
+  margin-left: 15px;
+}
+.productDetail .left > .head .productInfo ul li .dataC .data {
+  font-size: 16px;
+  color: #fff;
+}
+.productDetail .left > .head .productInfo ul li .dataC .data span {
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.productDetail .left > .head .productInfo ul li .dataC .unit {
+  font-size: 16px;
+  color: #fff;
+}
+.productDetail .left .indicator {
+  margin-top: 50px;
+}
+.productDetail .left .indicator .title {
+  font-size: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #cccccc;
+}
+.productDetail .left .indicator .indicatorTable {
+  margin-top: 20px;
+}
+.productDetail .left .indicator .indicatorTable ul {
+  border: 1px solid #ccc;
+}
+.productDetail .left .indicator .indicatorTable ul li {
+  display: flex;
+}
+.productDetail .left .indicator .indicatorTable ul li:last-child span {
+  border-bottom: none;
+}
+.productDetail .left .indicator .indicatorTable ul li:last-child span.singular {
+  border-bottom: none;
+}
+.productDetail .left .indicator .indicatorTable ul li span {
+  flex: 1;
+  height: 60px;
+  padding: 0 10px;
+  line-height: 60px;
+  font-size: 14px;
+  color: #999999;
+  border-bottom: 1px dashed #cccccc;
+  border-right: 1px solid #cccccc;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+.productDetail .left .indicator .indicatorTable ul li span.singular {
+  border-right: none;
+  border-bottom: 1px solid #cccccc;
+  background: #eeeeee;
+}
+.productDetail .left .sameProduct {
+  margin-top: 30px;
+}
+.productDetail .left .sameProduct .title {
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+.productDetail .left .sameProduct .sameProductTable {
+  margin-top: 20px;
+}
+.productDetail .right {
+  width: 250px;
+  margin-left: 30px;
+}
+.productDetail .right .remain {
+  margin-top: 30px;
+  background: #24cbbf;
+  padding: 20px 18px;
+  box-sizing: border-box;
+}
+.productDetail .right .remain .remainField {
+  margin-top: 15px;
+  color: #fff;
+}
+.productDetail .right .remain .remainField label {
+  font-size: 14px;
+  font-weight: normal;
+}
+.productDetail .right .remain .remainField > p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.productDetail .right .remain .remainField input {
+  height: 40px;
+  width: 180px;
+  background: #fff;
+  border: none;
+  margin-right: 8px;
+  text-indent: 10px;
+}
+.productDetail .right .remain .remainField input:focus {
+  border: none;
+}
+.productDetail .right .remain .remainField .unit {
+  font-size: 20px;
+}
+.productDetail .right .remain .payOrder {
+  margin: 20px auto;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  background: #f35f5f;
+  height: 40px;
+  line-height: 40px;
+}
+.productDetail .right .supplier {
+  margin-top: 20px;
+  padding: 30px;
+  background: #eeeeee;
+}
+.productDetail .right .supplier h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #666666;
+}
+.productDetail .right .supplier .compangName {
+  margin: 20px 0 15px 0;
+}
+.productDetail .right .supplier .attestation {
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+  border-bottom: 1px dashed #cccccc;
+}
+.productDetail .right .supplier .attestation span {
+  color: #fff;
+  padding: 5px 18px;
+  background: #26a0da;
+  border-radius: 25px;
+  margin-left: 5px;
+}
+.productDetail .right .supplier .contact {
+  margin-top: 10px;
+  text-align: left;
+}
+.productDetail .right .supplier .contact h3 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.productDetail .right .supplier .contact > p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.productDetail .right .supplier .contact > p i {
+  margin-right: 5px;
+}
+.productDetail .right .imgMarquee .belleScroll {
+  width: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  height: 258px;
+  cursor: pointer;
+}
+.productDetail .right .imgMarquee .belleScroll .bellePre {
+  position: absolute;
+  left: 0px;
+  width: 33px;
+  height: 50px;
+  background: black;
+  opacity: 0.7;
+  top: 50%;
+  margin-top: -25px;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+}
+.productDetail .right .imgMarquee .belleScroll .bellePre i {
+  margin: 14px 0 0 6px;
+}
+.productDetail .right .imgMarquee .belleScroll .belleNext {
+  position: absolute;
+  right: 0px;
+  width: 33px;
+  height: 50px;
+  background: black;
+  opacity: 0.7;
+  top: 50%;
+  margin-top: -25px;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+}
+.productDetail .right .imgMarquee .belleScroll .belleNext i {
+  margin: 14px 0 0 6px;
+}
+.productDetail .right .imgMarquee .belleScroll:hover .bellePre,
+.productDetail .right .imgMarquee .belleScroll:hover .belleNext {
+  display: block;
+}
+.productDetail .right .imgMarquee .belleScroll ul {
+  position: relative;
+}
+.productDetail .right .imgMarquee .belleScroll ul li {
+  float: left;
+  width: 260px;
+  height: 258px;
+}

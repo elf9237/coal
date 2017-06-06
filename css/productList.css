@@ -1,0 +1,147 @@
+.productMain {
+  margin-top: 50px;
+  display: flex;
+}
+.productMain .condition {
+  flex: 1;
+}
+.productMain .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.productMain .head .selectCodition {
+  color: #999;
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.productMain .head .selectCodition > span {
+  display: inline-block;
+  width: 70px;
+}
+.productMain .head .selectCodition ul {
+  flex: 1;
+  overflow: hidden;
+}
+.productMain .head .selectCodition ul li {
+  cursor: pointer;
+  margin-bottom: 5px;
+  float: left;
+  height: 30px;
+  padding: 0 20px 0 15px;
+  line-height: 30px;
+  border: 1px solid #cccccc;
+  margin-right: 20px;
+  position: relative;
+}
+.productMain .head .selectCodition ul li:hover {
+  border-color: #f5255e;
+}
+.productMain .head .selectCodition ul li:hover i {
+  color: #f5255e;
+  background: url("../images/icon-close-hover.png");
+}
+.productMain .head .selectCodition ul li span {
+  color: #666666;
+}
+.productMain .head .selectCodition ul li i {
+  font-style: normal;
+  position: absolute;
+  top: 11px;
+  right: 5px;
+  font-size: 14px;
+}
+.productMain .head > a {
+  width: 75px;
+}
+.productMain .explain {
+  width: 260px;
+  margin-left: 20px;
+}
+.productMain .explain img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+.productMain .explain .explainContent {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #26a0da;
+}
+.productMain .explain .explainContent h2 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.productMain .explain .explainContent .txt {
+  line-height: 25px;
+  margin-top: 20px;
+  background: #fff;
+  min-height: 180px;
+  font-size: 14px;
+  color: #7a7a7a;
+  padding: 15px;
+  text-indent: 30px;
+  box-sizing: border-box;
+}
+.productMain .conditionResult {
+  margin-top: 80px;
+}
+.productMain .conditionResult .navTab {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cccccc;
+  align-items: center;
+}
+.productMain .conditionResult .navTab ul {
+  overflow: hidden;
+}
+.productMain .conditionResult .navTab ul li {
+  position: relative;
+  cursor: pointer;
+  float: left;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #666666;
+  background-color: #eeeeee;
+  margin-right: 2px;
+}
+.productMain .conditionResult .navTab ul li.down i {
+  background: url("../images/icon-down-white.png");
+}
+.productMain .conditionResult .navTab ul li i {
+  position: absolute;
+  top: 18px;
+  right: -5px;
+}
+.productMain .conditionResult .navTab ul li.on {
+  color: #fff;
+  background-color: #26a0da;
+}
+.productMain .conditionResult .navTab .option {
+  display: flex;
+  align-items: center;
+}
+.productMain .conditionResult .navTab .option .sum {
+  margin-right: 8px;
+}
+.productMain .conditionResult .navTab .option .num {
+  margin-right: 8px;
+}
+.productMain .conditionResult .navTab .option .btn-go {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+  margin-left: 3px;
+  cursor: pointer;
+}
+.productMain .conditionResult .navTab .option .btn-go.on {
+  background: #cccccc;
+}

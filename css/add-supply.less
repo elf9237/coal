@@ -1,0 +1,162 @@
+// out: ../css/add-supply.css, sourcemap: false, compress: false
+.main {
+  flex:1;
+  display: flex;
+  .rightContent {
+    .content {
+      .fieldItem{
+        .blockFour {
+          display: none;
+          width: 1024px;
+        }
+
+        .blockText {
+          font-size: 20px;
+          margin:40px 0px 20px;
+        }
+        padding: 50px 0;
+        .fillField {
+          .addStore {
+            margin-left: 10px;
+            color:#aaaaaa;
+            vertical-align: middle;
+          }
+          &.inlineField {
+            display: inline-block;
+            margin-right: 30px;
+          }
+          margin-bottom: 20px;
+          .txt {
+            font-size:14px;
+            font-weight: normal;
+            color:#4c4c4c;
+            text-align: right;
+            .dot{
+              font-style: normal;
+              color:#f5255e;
+              margin-right: 2px;
+            }
+          }
+        }
+        .blockFive{
+          .blockText{
+            .fillField {
+              &.inlineField{
+                &.switchStyle{
+                  margin: 0;
+                }
+              }
+            }
+            span.labelText {
+              font-size: 12px;
+              margin:0 10px 0 20px;
+              vertical-align: middle;
+            }
+          }
+          .setPrice{
+            &>p.selectArea {
+              display: none;
+              >input {
+                vertical-align: middle;
+              }
+              span{
+                vertical-align: middle;
+                margin-left: 5px;
+                margin-right: 20px;
+              };
+            }
+            .noSetArea {
+              margin-top: 20px;
+            }
+            .areaTwoPrice, .areaOnePrice{
+              display: none;
+            }
+            .priceTting{
+              // display: none;
+              margin-top: 10px;
+              >h2 {
+                background-color: #eeeeee;
+                height: 40px;
+                line-height: 40px;
+                padding: 0 15px;
+              }
+              .fieldPrice{
+                padding: 15px 15px 0 15px;
+                border:1px solid #cccccc;
+                border-top: none;
+              }
+            }
+            .publicField{
+              margin-top: 15px;
+            }
+          }
+        }
+        .uploadingImg {
+          ul{
+            overflow: auto;
+            li{
+              cursor: pointer;
+              float: left;
+              margin-bottom: 10px;
+              position: relative;
+              margin-right: 20px;
+              background-color: #eeeeee;
+              height: 260px;
+              width: 260px;
+              .icon-add {
+                position: absolute;
+                left: 100px;
+                top: 100px;
+                z-index: 1;
+              }
+              img {
+                width: 100%;
+                height: 100%;
+                position:absolute;
+                left: 0;
+                top:0;
+                z-index: 2;
+              }
+              .foot {
+                >span{
+                  display: flex;
+                  align-items: center;
+                }
+                position: absolute;
+                left:0;
+                bottom: 0;
+                height: 60px;
+                line-height: 60px;
+                width: 100%;
+                background: url("../images/imgloadBg.png") repeat;
+                z-index: 3;
+                padding: 0 18px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: #fff;
+                i{
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .option{
+        margin-top: 30px;
+        button {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:1366px) {
+    .main .rightContent .content .fieldItem .blockFour {
+      width: auto;
+    }
+}
