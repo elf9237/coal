@@ -41,7 +41,57 @@
     display: block;
   }
   &.slideLogin{
-    
+    height: 400px;
+    margin-top: -200px;
+    .field {
+      align-items: center;
+      display: flex;
+      background: #fff;
+      margin-bottom: 30px!important;
+      .icon-filed{
+        margin: 0 10px 0 20px;
+      }
+      input{
+        flex:1;
+      }
+      .bar {
+        height: 50px;
+        width: 400px;
+        .slide-to-unlock-bg {
+          background-color: #fff!important;
+          border: none;
+          box-sizing: border-box;
+          height: 50px!important;
+          width: 400px!important;
+          text-align: center;
+          // text-indent: 68px;
+        }
+        .slide-to-unlock-handle{
+          width: 50px!important;
+          height: 50px!important;
+          border-radius: 0;
+          background: url("../images/icon-slide.png") center center no-repeat;
+          border: none;
+          &.success{
+            background-color: #fff!important;
+            background:url("../images/icon-slideSuccess.png") center center no-repeat;
+          }
+        }
+        .slide-to-unlock-progress{
+          left:0;
+          top: 0;
+          height: 50px!important;
+          border-radius: 0;
+        }
+      }
+    }
+    .login_error{
+      text-align: center;
+      color:#f5255e;
+      i{
+        margin-right:10px;
+      }
+    }
   }
   &.login{
     .login_error{

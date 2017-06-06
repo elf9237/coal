@@ -39,6 +39,58 @@
   color: #aaaaaa;
   display: block;
 }
+.indexContent.slideLogin {
+  height: 400px;
+  margin-top: -200px;
+}
+.indexContent.slideLogin .field {
+  align-items: center;
+  display: flex;
+  background: #fff;
+  margin-bottom: 30px!important;
+}
+.indexContent.slideLogin .field .icon-filed {
+  margin: 0 10px 0 20px;
+}
+.indexContent.slideLogin .field input {
+  flex: 1;
+}
+.indexContent.slideLogin .field .bar {
+  height: 50px;
+  width: 400px;
+}
+.indexContent.slideLogin .field .bar .slide-to-unlock-bg {
+  background-color: #fff!important;
+  border: none;
+  box-sizing: border-box;
+  height: 50px!important;
+  width: 400px!important;
+  text-align: center;
+}
+.indexContent.slideLogin .field .bar .slide-to-unlock-handle {
+  width: 50px!important;
+  height: 50px!important;
+  border-radius: 0;
+  background: url("../images/icon-slide.png") center center no-repeat;
+  border: none;
+}
+.indexContent.slideLogin .field .bar .slide-to-unlock-handle.success {
+  background-color: #fff!important;
+  background: url("../images/icon-slideSuccess.png") center center no-repeat;
+}
+.indexContent.slideLogin .field .bar .slide-to-unlock-progress {
+  left: 0;
+  top: 0;
+  height: 50px!important;
+  border-radius: 0;
+}
+.indexContent.slideLogin .login_error {
+  text-align: center;
+  color: #f5255e;
+}
+.indexContent.slideLogin .login_error i {
+  margin-right: 10px;
+}
 .indexContent.login {
   position: relative;
   height: 500px;

@@ -4,26 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>登陆</title>
+  <title>滑动登陆</title>
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/unlock.css">
 </head>
 <body>
   <div class="container">
-    <div class="indexContent login">
+    <div class="indexContent slideLogin">
       <div class="head">
         <img src="./images/index_logo.png" alt="">
       </div>
       <div class="content">
         <div class="field">
           <i class="icon-fieldName icon-filed"></i>
-          <input type="text" placeholder="请输入用户名或煤乐购煤号">
+          <input type="text" class="slideUname" placeholder="请输入煤乐购煤号">
           <span class="close"></span>
         </div>
         <div class="field">
-          <i class="icon-fieldPasswrod icon-filed"></i>
-          <input type="text" placeholder="请输入密码">
-          <span class="close"></span>
+          <div class="bar"></div>
         </div>
         <p class="login_error"><i class="icon-error error-username"></i>用户名不正确</p>
       </div>
@@ -33,11 +32,23 @@
 </body>
 <script src="./js/jquery.js"></script>
 <script src="./js/base.js"></script>
+<script src="./js/unlock.js"></script>
 <script>
   $(function(){
     $(".loginBtn").click(function(){
       $(".login_error").show();
     })
+    $('.bar').slideToUnlock({
+			text : '按住滑块，拖动到最右边',
+			succText : '验证通过，将自动登录',
+      succColor:'#24cbbf',
+      textColor : '#aaaaaa',
+      progressColor:'#24cbbf',
+      handleColor:'#57b1ab',
+      successFunc:function(){
+        $(".slideUname").val(111111111);
+      }
+		});
   })
 </script>
 </html>
