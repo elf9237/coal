@@ -223,7 +223,7 @@ function selectSellType(){
 
 //用户中心(结算页), 添加/编辑地址弹窗
 function addAddress() {
-  $(".setttleAccounts .addAddress, .setttleAccounts .editAddress").click(function(){
+  $(".setttleAccounts .addAddress, .setttleAccounts .editAddress, #addAddress, #editAddress").click(function(){
     $("#Adressfield").show();
   })
 }
@@ -263,8 +263,14 @@ function collectClick(){
     }
   })
 }
-
-
+//用户中心(收货地址) 点击设置默认地址
+function setDefailAddress (){
+  $(".setDefailAddress").click(function(){
+    $(this).parents("tr").siblings("tr").find(".isDefail").text("设为默认地址");
+    $(this).parents("tr").siblings("tr").find(".isDefail").removeClass("isDefail").addClass("colorC");
+    $(this).addClass("isDefail").removeClass("colorC").text("默认地址");
+  })
+}
 
 
 initMenuEvent();

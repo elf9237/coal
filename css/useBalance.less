@@ -119,12 +119,30 @@ a:hover{
         height: 100px;
       }
       .info{
+        &.block{
+          flex: 1;
+          border-bottom: 1px solid #cccccc;
+        }
         margin-left: 30px;
         h2{
           font-size: 20px;
           margin-bottom: 8px;
         }
         p {
+          &.detail{
+            font-size: 14px;
+            .orderid{
+              margin-right: 10px;
+              font-weight:600;
+            }
+            .shouldPay{
+              margin-left: 10px;
+              i{
+                font-style: normal;
+                color:#f35f5f;
+              }
+            }
+          }
           font-size:12px;
           margin-bottom: 10px;
         }
@@ -156,6 +174,12 @@ a:hover{
           }
         }
       }
+    }
+    .deliveryAddress{
+      margin:10px 0 0px 130px;
+      padding-bottom: 20px;
+      line-height: 23px;
+      font-size: 14px
     }
     .payStyle{
       margin-top: 40px;

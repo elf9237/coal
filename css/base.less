@@ -109,6 +109,9 @@ a:hover{
     color:#666666;
   }
 }
+.colorC{
+  color:#666666!important;
+}
 ._inlineBlock{
   display: inline-block;
 }
@@ -805,6 +808,9 @@ a:hover{
         input{
           vertical-align: middle;
         }
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         border-bottom: 1px solid #cccccc;
         height: 60px;
         color:#666;
@@ -824,6 +830,84 @@ a:hover{
           &:hover{
             color:#55aedf;
             text-decoration: none;
+          }
+          &.isDefail{
+            color:#fff;
+            background: #2290c4;
+            padding: 5px 10px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+  .tableList{
+    .fieldHead{
+      padding: 10px;
+      background: #eeeeee;
+      display: flex;
+      span {
+        border-right: 1px solid #cccccc;
+        flex:1;
+        padding-left: 15px;
+        box-sizing: border-box;
+        &:last-child{
+          border:none;
+        }
+        &.double{
+          flex:2;
+        }
+      }
+    }
+    .Items {
+      margin-top: 20px;
+      li{
+        margin-bottom: 10px;
+        h2{
+          display: flex;
+          align-items: center;
+          height: 40px;
+          line-height: 40px;
+          background-color: #eeeeee;
+          padding: 0 20px;
+          .orderId{
+            margin:0 10px 0 5px;
+          }
+          .orderTime{
+            margin-left: 10px
+          }
+        }
+        .detail {
+          padding: 0 10px;
+          box-sizing: border-box;
+          background: #ffffff;
+          height:72px;
+          line-height: 72px;
+          border:1px solid #cccccc;
+          border-top: none;
+          display: flex;
+          span {
+            padding-left: 15px;
+            box-sizing: border-box;
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &.double{
+              flex:2;
+            }
+            a {
+              color:#666666;
+              margin-right: 10px;
+              &.gotoPay{
+                color:#f5255e;
+              }
+            }
+            .a {
+              &:hover{
+                color:inherit;
+              }
+            }
           }
         }
       }

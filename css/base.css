@@ -175,6 +175,9 @@ a:hover {
   border: 1px solid #eeeeee;
   color: #666666;
 }
+.colorC {
+  color: #666666!important;
+}
 ._inlineBlock {
   display: inline-block;
 }
@@ -820,6 +823,9 @@ a:hover {
   color: #cccccc;
 }
 .tableContent .tableStyle tr td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   border-bottom: 1px solid #cccccc;
   height: 60px;
   color: #666;
@@ -849,6 +855,80 @@ a:hover {
 .tableContent .tableStyle tr td a:hover {
   color: #55aedf;
   text-decoration: none;
+}
+.tableContent .tableStyle tr td a.isDefail {
+  color: #fff;
+  background: #2290c4;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.tableContent .tableList .fieldHead {
+  padding: 10px;
+  background: #eeeeee;
+  display: flex;
+}
+.tableContent .tableList .fieldHead span {
+  border-right: 1px solid #cccccc;
+  flex: 1;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.tableContent .tableList .fieldHead span:last-child {
+  border: none;
+}
+.tableContent .tableList .fieldHead span.double {
+  flex: 2;
+}
+.tableContent .tableList .Items {
+  margin-top: 20px;
+}
+.tableContent .tableList .Items li {
+  margin-bottom: 10px;
+}
+.tableContent .tableList .Items li h2 {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: #eeeeee;
+  padding: 0 20px;
+}
+.tableContent .tableList .Items li h2 .orderId {
+  margin: 0 10px 0 5px;
+}
+.tableContent .tableList .Items li h2 .orderTime {
+  margin-left: 10px;
+}
+.tableContent .tableList .Items li .detail {
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: #ffffff;
+  height: 72px;
+  line-height: 72px;
+  border: 1px solid #cccccc;
+  border-top: none;
+  display: flex;
+}
+.tableContent .tableList .Items li .detail span {
+  padding-left: 15px;
+  box-sizing: border-box;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tableContent .tableList .Items li .detail span.double {
+  flex: 2;
+}
+.tableContent .tableList .Items li .detail span a {
+  color: #666666;
+  margin-right: 10px;
+}
+.tableContent .tableList .Items li .detail span a.gotoPay {
+  color: #f5255e;
+}
+.tableContent .tableList .Items li .detail span .a:hover {
+  color: inherit;
 }
 .tableContent .pageSize {
   display: flex;
