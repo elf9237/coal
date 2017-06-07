@@ -803,6 +803,7 @@ a:hover {
   margin-top: 40px;
 }
 .tableContent .tableStyle {
+  table-layout: fixed;
   width: 100%;
   border: 1px solid #cccccc;
   border-spacing: 0;
