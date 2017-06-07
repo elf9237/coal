@@ -1,0 +1,44 @@
+.progress-criteria{display:flex;margin:0 auto;margin-bottom:50px;width:1200px;flex-direction:column}
+.ad-progress-content{display:flex;width:1200px;justify-content:space-between;align-items:top}
+.ad-progress-content .ad-progress-step img{vertical-align:middle}
+.criteria-wrap{display:flex;flex:1}
+.nobug-tip{display:flex;margin:0 auto;width:300px;height:100px;background-color:#eee;flex-direction:row;justify-content:center;align-items:center}
+.nobug-tip p{margin-left:10px;font-size:16px}
+.f20{font-size:20px}
+.f30{font-size:30px}
+.red(color:#f35f5f) .mt50{margin-top:50px}
+.mt10{margin-top:10px}
+.mt100{margin-top:100px}
+.ml20{margin-left:20px}
+.ml10{margin-left:10px}
+.tableContent h1{padding-bottom:20px;border-bottom:1px solid #ccc;font-size:24px}
+.tableContent .tableStyle th{height:60px}
+.tableContent .tableStyle th:first-child{width:15%;color:#000;font-weight:400;font-size:20px}
+.tableContent .tableStyle tr td{height:150px;font-size:14px}
+.tableContent .tableStyle tr td .tableContent-num{display:block;margin-bottom:5px}
+.tableContent .tableStyle tr td .tableContent-num.progress-wrap{width:90%}
+.tableContent .tableStyle tr td a.btn-danger{border-color:#d43f3a;background-color:#d9534f;color:#fff;color:#fff}
+.tableContent .tableStyle tr td p.tableContent-num{font-size:14px}
+.tableContent .tableStyle tr td span.tableContent-num{color:#000}
+.tableContent .tableStyle tr td span.red{color:#f35f5f}
+.tableContent .tableStyle tr td .tableContent-num-big{margin-top:-15px}
+.progress{margin-bottom:5px;width:80%;height:10px}
+.progress-bar-danger{background-color:#24cbbf}
+.progress-wrap{display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
+.progress-num{margin-left:10px}
+.input-group{display:flex;flex-direction:row;justify-content:flex-start;align-items:center}
+.input-group .form-control{width:200px;border-radius:0}
+.icon-tel{display:inline-block;width:12px;height:12px;background:url(../images/icon-tel.png) no-repeat;vertical-align:middle}
+.icon-help{display:inline-block;width:20px;height:20px;background:url(../images/icon-help.png) no-repeat;vertical-align:middle}
+.icon-qq{display:inline-block;width:19px;height:20px;background:url(../images/icon-qq.png) no-repeat;vertical-align:middle}
+.icon-user{display:inline-block;width:20px;height:20px;background:url(../images/icon-user.png) no-repeat;vertical-align:middle}
+.useBalance{color:#666}
+.useBalance .welcom{height:30px;background:#f6f6f6;line-height:30px}
+.useBalance .welcom .welcomContent{display:flex;margin:0 auto;width:1250px;justify-content:space-between}
+.useBalance .welcom .welcomContent .left{display:flex;align-items:center}
+.useBalance .welcom .welcomContent .left i{margin-right:5px}
+.useBalance .welcom .welcomContent .left .welcomTxt{margin-right:15px}
+.useBalance .welcom .welcomContent .left .phoneNumber{color:#26a0da;font-style:normal}
+.useBalance .welcom .welcomContent .right a{margin-left:10px}
+.useBalance .welcom .welcomContent .right a:after{margin-left:10px;color:#ccc;content:"|"}
+.tableContent .tableStyle th::before{padding-right:20px;color:#ccc;content:""}
