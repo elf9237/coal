@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>商品列表</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/productList.css">
+  <link rel="stylesheet" href="./css/buyList.css">
+</head>
+<body style="overflow-y: auto">
+    <div class="useBalance">
+      <div class="welcom">
+        <div class="welcomContent">
+          <div class="left">
+            <span class=welcomTxt>您好，欢迎来到煤乐购！</span>
+            <span><i class="icon-tel"></i>全国免费热线：<i class="phoneNumber">400-1100-112</i></span>
+          </div>
+          <div class="right">
+            <a href="#"><i class="icon-user"></i></a>
+            <a href="#"><i class="icon-qq"></i></a>
+            <a href="#"><i class="icon-help"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="criteria-wrap">
+        <div class="progress-criteria">
+          <div class="ad-progress-content mt50">
+            <div class="ad-progress-step"><img src="./images/ad-progress01.png"></div>
+            <div class="ad-progress-step"><img src="./images/ad-progress02.png"></div>
+            <div class="ad-progress-step"><img src="./images/ad-progress03.png"></div>
+            <div class="ad-progress-step"><img src="./images/ad-progress04.png"></div>
+          </div>
+          <div class="productMain">
+          <div class="condition">
+            <div class="head">
+              <div class="selectCodition">
+                <span>已选条件：</span>
+                <ul>
+                </ul>
+              </div>
+              <a href="javascript:;" class="clearCondition">清空筛选条件</a>
+            </div>
+            <div class="conditionList">
+              <ul>
+                <li>
+                  <span class="labeltext">煤种：</span>
+                  <dl>
+                    <dt>不限</dt>
+                    <div class="item">
+                      <dd>动力煤(0)</dd>
+                      <dd>无烟煤(0)</dd>
+                      <dd>喷吹煤(0)</dd>
+                      <dd>焦煤(0)</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li>
+                  <span class="labeltext">产地：</span>
+                  <dl>
+                    <dt>不限</dt>
+                    <div class="item">
+                      <dd>广东</dd>
+                      <dd>河北</dd>
+                      <dd>江苏</dd>
+                      <dd>天津</dd>
+                      <dd>安徽</dd>
+                      <dd>北京</dd>
+                      <dd>福建</dd>
+                      <dd>甘肃</dd>
+                      <dd>广西</dd>
+                      <dd>贵州</dd>
+                      <dd>海南</dd>
+                      <dd>河南</dd>
+                      <dd>黑龙江</dd>
+                      <dd>湖北</dd>
+                      <dd>湖南</dd>
+                      <dd>吉林</dd>
+                      <dd>江西</dd>
+                      <dd>辽宁</dd>
+                      <dd>内蒙古</dd>
+                      <dd>宁夏</dd>
+                      <dd>山东</dd>
+                      <dd>山西</dd>
+                      <dd>陕西</dd>
+                      <dd>上海</dd>
+                      <dd>四川</dd>
+                      <dd>西藏</dd>
+                      <dd>新疆</dd>
+                      <dd>云南</dd>
+                      <dd>浙江</dd>
+                      <dd>重启</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li>
+                  <span class="labeltext">低位发热量：</span>
+                  <dl>
+                    <dt>不限</dt>
+                    <div class="item">
+                      <dd>3000以下</dd>
+                      <dd>3000-3500</dd>
+                      <dd>3500-4000</dd>
+                      <dd>4000-4500</dd>
+                      <dd>4500-5000</dd>
+                      <dd>5000-5500</dd>
+                      <dd>5500-6000</dd>
+                      <dd>60000以上</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li>
+                  <span class="labeltext">空干基挥发分：</span>
+                  <dl>
+                    <dt>不限</dt>
+                    <div class="item">
+                      <dd>10%以下</dd>
+                      <dd>10%-20%</dd>
+                      <dd>20%-30%</dd>
+                      <dd>30%—40%</dd>
+                      <dd>40%以上</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li class="no-border">
+                  <span class="labeltext">收到基硫分：</span>
+                  <dl>
+                    <dt>不限</dt>
+                    <div class="item">
+                      <dd>10%以下</dd>
+                      <dd>0.5%以下</dd>
+                      <dd>0.5%-1.0%</dd>
+                      <dd>1.0%-1.5%</dd>
+                      <dd>1.5%-2.0%</dd>
+                      <dd>2.0%-2.5%</dd>
+                      <dd>2.5%-3.0%</dd>
+                      <dd>3.0%以上</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li class="noShow">
+                  <span class="labeltext">G值：</span>
+                  <dl>
+                    <dt>不限</dt>
+                    <div class="item">
+                      <dd>20以下</dd>
+                      <dd>20-40</dd>
+                      <dd>40-60</dd>
+                      <dd>60-80</dd>
+                      <dd>80以上</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li class="noShow">
+                  <span class="labeltext">Y值：</span>
+                  <dl>
+                    <dt>不限</dt>
+                    <div class="item">
+                      <dd>10mm以下</dd>
+                      <dd>10-15mm</dd>
+                      <dd>15-20mm</dd>
+                      <dd>20-25mm</dd>
+                      <dd>25-30mm</dd>
+                      <dd>30mm以上</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li class="noShow">
+                  <span class="labeltext">灰熔点：</span>
+                  <dl>
+                    <dt>不限</dt>
+                    <div class="item">
+                      <dd>900-1000</dd>
+                      <dd>1000-1100</dd>
+                      <dd>1100-1200</dd>
+                      <dd>1200-1300</dd>
+                      <dd>1300-1400</dd>
+                      <dd>1400-1500</dd>
+                      <dd>1500-1600</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li class="noShow">
+                  <span class="labeltext">颗粒度：</span>
+                  <dl>
+                    <dt>不限</dt>
+                    <div class="item">
+                      <dd>原煤</dd>
+                      <dd>混煤</dd>
+                      <dd>末煤</dd>
+                      <dd>洗精煤</dd>
+                      <dd>洗末煤</dd>
+                      <dd>洗混煤</dd>
+                      <dd>大块</dd>
+                      <dd>中块</dd>
+                      <dd>三八块</dd>
+                      <dd>二五仔</dd>
+                    </div>
+                  </dl>
+                </li>
+              </ul>
+              <span class="moreCondition">更多指标  <i class="icon-more-gary "></i></span>
+            </div>
+            <div class="conditionResult">
+              <div class="navTab">
+                <ul>
+                  <li>排序</li>
+                  <li class="on">价格<i class="icon-up"></i></li>
+                  <li>创建时间</li>
+                  <li>销售量</li>
+                  <li>库存量</li>
+                </ul>
+                <div class="option">
+                  <span class="sum">共找到35条商品</span>
+                  <span class="num">1/3</span>
+                  <span class="btn-go on"><i class="icon-pre"></i></span>
+                  <span class="btn-go"><i class="icon-next"></i></span>
+                </div>
+              </div>
+              <div class="tableContent">
+                <table class="tableStyle">
+                  <tr>
+                    <th>6700大卡喷吹煤</th>
+                    <th>库存6,000吨</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                  <tr>
+                    <td class=""><span class="tableContent-num red tableContent-num-big"><span class="f30">454</span>元/吨</span><p class="tableContent-num">现货单价</p></td>
+                    <td><span class="tableContent-num">4,555Kcal</span><p class="tableContent-num">低位热值</p></td>
+                    <td><span class="tableContent-num">动力煤</span><p class="tableContent-num">煤种</p></td>
+                    <td width="25%">
+                    <div class="progress-wrap">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                          <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                      </div>
+                      <span class="progress-num">80%</span>
+                    </div>
+                    <p class="tableContent-num">剩余库存</p>
+                    </td>
+                    <td width="30%"><span class="tableContent-num">采购数量：</span>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                      <span class="input-group-num ml10 f20" id="basic-addon1">吨</span>
+                    </div>
+                    <a href="javascript:void(0)" class="tableContent-num btn btn-danger mt10">立即下单</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tableContent">
+                <h1>常购商品</h1>
+                <table class="tableStyle mt10">
+                  <tr>
+                    <th>6700大卡喷吹煤</th>
+                    <th>库存6,000吨</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                  <tr>
+                    <td class=""><span class="tableContent-num red tableContent-num-big"><span class="f30">454</span>元/吨</span><p class="tableContent-num">现货单价</p></td>
+                    <td><span class="tableContent-num">4,555Kcal</span><p class="tableContent-num">低位热值</p></td>
+                    <td><span class="tableContent-num">动力煤</span><p class="tableContent-num">煤种</p></td>
+                    <td width="25%">
+                    <div class="progress-wrap">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                          <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                      </div>
+                      <span class="progress-num">80%</span>
+                    </div>
+                    <p class="tableContent-num">剩余库存</p>
+                    </td>
+                    <td width="30%"><span class="tableContent-num">采购数量：</span>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                      <span class="input-group-num ml10 f20" id="basic-addon1">吨</span>
+                    </div>
+                    <a href="javascript:void(0)" class="tableContent-num btn btn-danger mt10">立即下单</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tableContent">
+                <h1>常购商品</h1>
+                <div class="nobug-tip mt100">
+                   <img src="./images/notice_tip.png" alt="">
+                   <p>删选条件加的太多啦，<br> 未找到相关产品！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> 
+      </div>
+    </div>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/base.js"></script>
+</html>
