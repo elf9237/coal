@@ -1,0 +1,206 @@
+// out: ../css/account.css, sourcemap: false, compress: false
+.accountSaft {
+  color:#666666;
+  margin-top: 20px;
+  .flow{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+    .flowStep{
+      &.complete {
+        .circle {
+          background: #d4ecf8;
+          i{
+            background: #26a0da;
+          }
+        }
+      }
+      .circle {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        background: #f0f0f0;
+        border-radius: 50%;
+        i{
+          display: flex;
+          background: #ccc;
+          font-style: normal;
+          color:#fff;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          box-sizing: border-box;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+        }
+      }
+      .txt {
+        text-align: center;
+        margin-top: 8px;
+      }
+    }
+    .line{
+      width: 260px;
+      height: 1px;
+      background-color: #cccccc;
+      margin: 0 20px;
+      margin-top: -15px;
+    }
+  }
+  .inputMsg {
+    // width: 780px;
+    margin: 24px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding-left: 170px;
+    .field{
+      display: flex;
+      align-items: center;
+      position: relative;
+      // flex-direction: column;
+      font-size: 14px;
+
+      .phoneNumber{
+        width: 288px;
+      }
+      label{
+        margin-bottom: 0;
+        width: 130px;
+        text-align: right;
+      }
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      min-height: 30px;
+      span {
+        font-size: 14px;
+        // min-width: 114px;
+      }
+      input {
+        height: 40px;
+        width: 200px;
+        border:1px solid #cccccc;
+        text-indent: 15px;
+        line-height: 40px;
+      }
+      .code{
+        width: 89px;
+        height: 40px;
+        display:flex;
+        border:1px solid #ccc;
+        border-left: none;
+        line-height: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        color:#666;
+        img{
+          width: 88%;
+          height: auto;
+        }
+        &.down{
+          background: #ccc;
+        }
+      }
+      .hint {
+        position: absolute;
+        top:10px;
+        left:419px;
+        width:100%;
+        i{
+          margin: 0 15px;
+        }
+        .error{
+          padding: 5px 15px;
+          background: #f5255e;
+          color:#fff;
+        }
+      }
+    }
+  }
+  .optionBtn{
+    // margin-top: 80px;
+    // text-align: center;
+    padding-left:308px;
+    width: 780px;
+    margin: 80px auto;
+    box-sizing: border-box;
+    a {
+      display: inline-block;
+      margin-right: 20px;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 5px;
+      color:#fff;
+      background: #26a0da;
+      text-align: center;
+      &.btn-cancle {
+        color:#666666;
+        background: #eeeeee;
+      }
+    }
+  }
+  .success-hint{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+      margin-right: 10px;
+    }
+  }
+  .hintForUser{
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4fafd;
+    dl {
+      font-size: 14px;
+      color:#f35f5f;
+      dt{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        i{
+          margin-right: 5px;
+          margin-top: 5px;
+        }
+      }
+      dd{
+        line-height: 20px;
+      }
+    }
+  }
+  .goTosetting{
+    margin-top: 40px;
+    li{
+      height:80px;
+      line-height: 80px;
+      border-bottom: 1px dashed #cccccc;
+      display: flex;
+      justify-content: space-between;
+      .left{
+        label{
+          font-weight: 600;
+          margin-right: 10px;
+        }
+      }
+      .right{
+        span {
+          margin-right: 100px;
+        }
+      }
+    }
+  }
+}
+#verificationCode i{
+  color:#f35f5f;
+  font-style: normal;
+}

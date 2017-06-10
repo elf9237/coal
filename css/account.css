@@ -1,0 +1,188 @@
+.accountSaft {
+  color: #666666;
+  margin-top: 20px;
+}
+.accountSaft .flow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.accountSaft .flow .flowStep.complete .circle {
+  background: #d4ecf8;
+}
+.accountSaft .flow .flowStep.complete .circle i {
+  background: #26a0da;
+}
+.accountSaft .flow .flowStep .circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background: #f0f0f0;
+  border-radius: 50%;
+}
+.accountSaft .flow .flowStep .circle i {
+  display: flex;
+  background: #ccc;
+  font-style: normal;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.accountSaft .flow .flowStep .txt {
+  text-align: center;
+  margin-top: 8px;
+}
+.accountSaft .flow .line {
+  width: 260px;
+  height: 1px;
+  background-color: #cccccc;
+  margin: 0 20px;
+  margin-top: -15px;
+}
+.accountSaft .inputMsg {
+  margin: 24px auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.accountSaft .inputMsg .field {
+  position: relative;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+.accountSaft .inputMsg .field .phoneNumber {
+  width: 288px;
+}
+.accountSaft .inputMsg .field label {
+  margin-bottom: 0;
+  width: 130px;
+  text-align: right;
+}
+.accountSaft .inputMsg .field span {
+  font-size: 14px;
+}
+.accountSaft .inputMsg .field input {
+  height: 40px;
+  width: 200px;
+  border: 1px solid #cccccc;
+  text-indent: 15px;
+  line-height: 40px;
+}
+.accountSaft .inputMsg .field .code {
+  width: 89px;
+  height: 40px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-left: none;
+  line-height: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+.accountSaft .inputMsg .field .code img {
+  width: 88%;
+  height: auto;
+}
+.accountSaft .inputMsg .field .code.down {
+  background: #ccc;
+}
+.accountSaft .inputMsg .field .hint {
+  position: absolute;
+  top: 10px;
+  left: 419px;
+  width: 100%;
+}
+.accountSaft .inputMsg .field .hint i {
+  margin: 0 15px;
+}
+.accountSaft .inputMsg .field .hint .error {
+  padding: 5px 15px;
+  background: #f5255e;
+  color: #fff;
+}
+.accountSaft .optionBtn {
+  padding-left: 308px;
+  width: 780px;
+  margin: 80px auto;
+  box-sizing: border-box;
+}
+.accountSaft .optionBtn a {
+  display: inline-block;
+  margin-right: 20px;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  background: #26a0da;
+  text-align: center;
+}
+.accountSaft .optionBtn a.btn-cancle {
+  color: #666666;
+  background: #eeeeee;
+}
+.accountSaft .success-hint {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accountSaft .success-hint i {
+  margin-right: 10px;
+}
+.accountSaft .hintForUser {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f4fafd;
+}
+.accountSaft .hintForUser dl {
+  font-size: 14px;
+  color: #f35f5f;
+}
+.accountSaft .hintForUser dl dt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.accountSaft .hintForUser dl dt i {
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.accountSaft .hintForUser dl dd {
+  line-height: 20px;
+}
+.accountSaft .goTosetting {
+  margin-top: 40px;
+}
+.accountSaft .goTosetting li {
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px dashed #cccccc;
+  display: flex;
+  justify-content: space-between;
+}
+.accountSaft .goTosetting li .left label {
+  font-weight: 600;
+  margin-right: 10px;
+}
+.accountSaft .goTosetting li .right span {
+  margin-right: 100px;
+}
+#verificationCode i {
+  color: #f35f5f;
+  font-style: normal;
+}

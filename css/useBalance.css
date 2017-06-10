@@ -143,6 +143,9 @@ a:hover {
 .useBalance .welcom .welcomContent .right a {
   margin-left: 10px;
 }
+.useBalance .welcom .welcomContent .right a:last-child:after {
+  content: "";
+}
 .useBalance .welcom .welcomContent .right a:after {
   content: "|";
   margin-left: 10px;

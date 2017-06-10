@@ -271,6 +271,26 @@ function setDefailAddress (){
     $(this).addClass("isDefail").removeClass("colorC").text("默认地址");
   })
 }
+//验证码倒计时
+function countDown () {
+  $("#verificationCode").click(function(){
+    if(!$(this).hasClass("down")){
+      var num = 60;
+      $("#verificationCode").html("重新发送(<i>"+num+"</i>)");
+      $("#verificationCode").addClass("down");
+      var time = setInterval(function(){
+        num = num -1;
+        if(num > 0) {
+          $("#verificationCode").html("重新发送(<i>"+num+"</i>)");
+        } else {
+            $("#verificationCode").removeClass("down");
+            $("#verificationCode").html("重新发送");
+            clearInterval(time);
+        }
+      }, 1000);
+    }
+  })
+}
 
 
 initMenuEvent();

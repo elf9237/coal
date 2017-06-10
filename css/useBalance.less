@@ -71,6 +71,11 @@ a:hover{
       }
       .right{
         a {
+          &:last-child{
+            &:after {
+              content: "";
+            }
+          }
           margin-left: 10px;
           &:after{
             content:"|";
