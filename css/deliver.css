@@ -1,0 +1,33 @@
+.baseInfo {
+  margin-top: 20px;
+  color: #666666;
+}
+.baseInfo .deliverOption {
+  margin-top: 50px;
+}
+.baseInfo .deliverOption .titleTXT {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.baseInfo .deliverOption .filedContent .field {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.baseInfo .deliverOption .filedContent .field .lable {
+  margin-right: 10px;
+}
+.baseInfo .deliverOption .filedContent .field .flex1 {
+  flex: 1;
+}
+.baseInfo .deliverOption .filedContent .field .option a {
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #26a0da;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: inline-block;
+}

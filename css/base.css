@@ -136,7 +136,10 @@ a:hover {
   width: 80px;
 }
 ._w123 {
-  width: 123px;
+  width: 123px!important;
+}
+._w200 {
+  width: 200px!important;
 }
 ._mr10 {
   margin-right: 10px;
@@ -754,6 +757,9 @@ a:hover {
   justify-content: space-between;
   padding-bottom: 10px;
 }
+.main .rightContent .content .title.no-border {
+  border-bottom: 0;
+}
 .main .rightContent .content .title span {
   font-size: 24px;
   color: #555555;
@@ -834,6 +840,10 @@ a:hover {
 .tableContent {
   display: block;
   margin-top: 40px;
+}
+.tableContent h3.titleTXT {
+  font-size: 20px;
+  margin: 20px 0;
 }
 .tableContent .tableStyle {
   table-layout: fixed;
@@ -1197,7 +1207,81 @@ a:hover {
   color: #fff;
   background-color: #26a0da;
 }
-
-.mt50{
-  margin-top: 50px;
+/*上传回执单*/
+.fieldItem p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.panel-bank {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.panel-bank .bank-msg {
+  padding-left: 30px;
+  border-left: 1px solid #ccc;
+  margin-left: 30px;
+}
+.panel-upload-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.panel-upload-img .btn-upload-img {
+  align-self: flex-end;
+  margin-top: -10px;
+}
+.main .rightContent .content .fieldItem .panel-upload-img .uploadingImg ul li {
+  margin-bottom: 0;
+}
+.panel-img p.tips {
+  padding: 0 0 15px 15px;
+}
+/*公用*/
+.red {
+  color: red;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.verticalTabel > h3.titleTXT {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.verticalTabel ul {
+  border: 1px solid #ccc;
+}
+.verticalTabel ul li {
+  display: flex;
+}
+.verticalTabel ul li:last-child .lable {
+  border-bottom: none;
+}
+.verticalTabel ul li:last-child .text {
+  border-bottom: none;
+}
+.verticalTabel ul li span {
+  padding: 0 15px;
+  box-sizing: border-box;
+  height: 60px;
+  line-height: 60px;
+}
+.verticalTabel ul li span.lable {
+  width: 200px;
+  font-size: 14px;
+  border-bottom: 1px dashed #cccccc;
+  background: #eeeeee;
+}
+.verticalTabel ul li span.text {
+  flex: 1;
+  border-bottom: 1px solid #cccccc;
+}
+.verticalTabel ul li span.text a {
+  margin-left: 15px;
+  color: #26a0da;
 }

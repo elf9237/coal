@@ -135,23 +135,18 @@
 .main .rightContent .content .option button {
   margin-right: 20px;
 }
+#receiptUploading ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  cursor: pointer;
+}
 @media screen and (max-width: 1366px) {
   .main .rightContent .content .fieldItem .blockFour {
     width: auto;
   }
 }
-
-
-/*上传回执单*/
-.fieldItem p{font-size: 14px;line-height: 24px}
-.panel-bank{display: flex;flex-direction: row;justify-content: flex-start;align-items: center;}
-.panel-bank .bank-msg{padding-left: 30px;border-left: 1px solid #ccc;margin-left: 30px}
-.panel-upload-img{display: flex;flex-direction: row;justify-content: flex-start;align-items: center;}
-.panel-upload-img .btn-upload-img{align-self: flex-end;margin-top: -10px}
-.main .rightContent .content .fieldItem .panel-upload-img .uploadingImg ul li{margin-bottom: 0;}
-.panel-img p.tips{padding: 0 0 15px 15px}
-
-/*公用*/
-.red{color:red;}
-.mt10{margin-top: 10px;}
-.ml20{margin-left: 20px}
