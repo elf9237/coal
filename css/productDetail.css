@@ -112,6 +112,9 @@
   white-space: nowrap;
   display: inline-block;
 }
+.productDetail .left .indicator .indicatorTable ul li span:last-child {
+  border-right: none;
+}
 .productDetail .left .indicator .indicatorTable ul li span.singular {
   border-right: none;
   border-bottom: 1px solid #cccccc;
