@@ -35,8 +35,8 @@ a:hover{text-decoration:none}
 .slideBox{ height:400px; overflow:hidden; position:relative; border:1px solid #ddd;  }
 .slideBox .hd{width: 100px; height:15px; overflow:hidden; position:absolute; right:50%; bottom:5px; z-index:1;margin-right: -50px}
 .slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
-.slideBox .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url("../images/icoCircle.gif") 0 -9px no-repeat;  }
-.slideBox .hd ul li.on{ background-position: 0 0;border-radius: 5px}
+.slideBox .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer;border-radius: 50%;background:#fff;  }
+.slideBox .hd ul li.on{background: orange;}
 .slideBox .bd{ position:relative; height:100%; z-index:0;   }
 .slideBox .bd li{ zoom:1; vertical-align:middle; }
 .slideBox .bd img{width:100%; height:400px; display:block;  }
@@ -62,7 +62,7 @@ body.hc_home .hc_lnav .allbtn ul{display:block}
 body.hc_list .hc_lnav .allbtn ul{display:block}
 .hc_lnav .allbtn ul li{zoom:1;clear:both;cursor:default;position: relative;}
 .hc_lnav .allbtn ul li .tx{line-height:80px;background-color:#26a0da;background-repeat:no-repeat;background-position:right center;height:80px;_background-image:none;display: flex;justify-content: flex-start;align-items: center;flex-direction: row;}
-.hc_lnav .allbtn ul li .tx:hover{border-top:1px solid #26a0da;}             
+.hc_lnav .allbtn ul li .tx:hover{border-top:1px solid #26a0da;}
 .hc_lnav .allbtn ul li .tx a{font-family:微软雅黑, 黑体;color:#ffffff;font-size:14px;-webkit-transition:color 0.1s ease-out 0s;-moz-transition:color 0.1s ease-out 0s;-ms-transition:color 0.1s ease-out 0s;-o-transition:color 0.1s ease-out 0s;transition:color 0.1s ease-out 0s;display: flex;align-items: center;justify-content: flex-start;flex-direction: row}
 .hc_lnav .allbtn ul li .tx a i{line-height:25px;width:25px;background-position:0px 0px;float:left;height:25px;text-decoration:none;background-repeat: no-repeat;margin-left:50px;margin-right: 20px}
 .hc_lnav .allbtn ul li.a1 .tx a i{background-image:url(../images/icon-nav01.png)}
@@ -74,7 +74,7 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .hc_lnav .allbtn ul li dl a{line-height:22px;white-space:nowrap;float:left;color:#d9e7ce;margin-left:6px;margin-right:6px;-webkit-transition:color 0.1s ease-out 0s;-moz-transition:color 0.1s ease-out 0s;-ms-transition:color 0.1s ease-out 0s;-o-transition:color 0.1s ease-out 0s;transition:color 0.1s ease-out 0s}
 .hc_lnav .allbtn ul li dt{padding-left:10px;width:30px;float:left;padding-top:1px}
 .hc_lnav .allbtn ul li dd{line-height:22px;width:150px;float:left;padding-top:2px}
-/*二级导航隐藏*/ 
+/*二级导航隐藏*/
 .hc_lnav .allbtn ul li .pop{position:absolute;border:1px solid #26a0da;background:url(../images/border-nav-1px.png) no-repeat left top; padding-bottom:10px;background-color:#fff;padding-left:20px;width:240px;padding-right:20px;top:0px;padding-top:10px;left:220px;display: none;border-left: none}
 .hc_lnav .allbtn ul li .pop h3{display:none;font-size:14px}
 .hc_lnav .allbtn ul li .pop dl{padding-bottom:6px;color:#666666;padding-top:6px}
@@ -177,7 +177,7 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .product-transaction-list table{color:#fff;font-size: 12px}
 .product-transaction-list table tr th{font-size: 14px;border-bottom: 1px solid #fff;padding:0px 0 10px;}
 .product-transaction-list table tr td:first-child{max-width: 50px}
-.product-transaction-list table.transaction-table tr td{height: 35px;line-height: 35px;max-width: 60px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-right: 10px;}
+.product-transaction-list table.transaction-table tr td{height: 35px;line-height: 35px;max-width: 60px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-right: 10px;cursor: pointer;}
 .product-transaction-list table.transaction-table tr td .badge{position: absolute;left: 0px;top:0px;}
 .product-list-bug .tableContent .tableStyle tr td{height: 62px}
 .product-list-bug .tableContent .tableStyle tr td a.icon-link{color:#666;}
@@ -194,8 +194,8 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .cooperativeMedia{width: 1250px;margin: 0 auto;}
 .cooperativeMedia h1{font-size: 30px;text-align: center;padding-bottom: 20px;background:url(../images/bg-dot-blue.png) center bottom no-repeat;color:#666;margin-top: 120px}
 .picMarquee-left{position: relative;}
-.picMarquee-left .next{display: inline-block;width: 30px;height: 16px;background:url(../images/icon-right-arror.png) center no-repeat;position: absolute;right:-40px;top:45px;cursor: pointer;}
-.picMarquee-left .prev{display: inline-block;width: 30px;height: 16px;background:url(../images/icon-left-arror.png) center no-repeat;position: absolute;left:-30px;top:45px;cursor: pointer;}
+.picMarquee-left .next{display: inline-block;width: 30px;height: 16px;background:url(../images/icon-right-arror.png) center no-repeat;position: absolute;right:-40px;top:63px;cursor: pointer;}
+.picMarquee-left .prev{display: inline-block;width: 30px;height: 16px;background:url(../images/icon-left-arror.png) center no-repeat;position: absolute;left:-30px;top:63px;cursor: pointer;}
 .picMarquee-left .body ul{display: flex;flex-direction: row;justify-content: space-around;align-items: center;}
 .picMarquee-left .body ul li{margin-right: 10px}
 .picMarquee-left .body ul li img{width:100%;}
@@ -237,4 +237,3 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .icon-buy{display: inline-block;width:20px;height: 18px;background:url(../images/icon-buy-gray.png) no-repeat center;}
 .btn-gray{background:#eee;border-color:#eee;color:#000;}
 .btn-gray:hover{background:#eee;border-color:#eee;color:#000;}
-
