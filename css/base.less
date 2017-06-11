@@ -87,11 +87,20 @@ a:hover{
 .w_30{
   width: 30%;
 }
+.w_548{
+  width: 548px!important;
+}
 .mt80{
   margin-top: 80px;
 }
 .mt30{
   margin-top: 30px;
+}
+.mt20{
+  margin-top: 20px!important;
+}
+.alignTop{
+  align-items: flex-start!important;
 }
 .selectTime {
   height: 34px;
@@ -817,6 +826,7 @@ a:hover{
 .tableContent {
   display:block;
   margin-top: 40px;
+  overflow: auto;
   h3.titleTXT {
     font-size: 20px;
     margin: 20px 0;
@@ -828,10 +838,14 @@ a:hover{
     border-spacing: 0;
     border-collapse: collapse;
     text-align: left;
+    min-width: 100%;
     th {
       background-color: #eeeeee;
       height: 40px;
       box-sizing: border-box;
+      width:100px;
+      min-width: 100px;
+      // max-width: 300px;
       &:first-child::before{
         content:"";
       }
@@ -843,6 +857,22 @@ a:hover{
     }
     tr {
       td{
+        .square{
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+          vertical-align: middle;
+          &.red{
+            background: #f35f5f;
+          }
+          &.blue{
+            background: #26a0da;
+          }
+          &.green{
+            background: #24cbbf;
+          }
+        }
         .item_id {
           vertical-align: middle;
           margin-left: 3px;
@@ -870,6 +900,9 @@ a:hover{
           margin-right: 20px;
           text-decoration: none;
           color:#26a0da;
+          &:last-child{
+            margin-right: 0px;
+          }
           &:hover{
             color:#55aedf;
             text-decoration: none;
@@ -936,6 +969,10 @@ a:hover{
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            &.noflex{
+              width: 165px;
+              flex:inherit;
+            }
             &.double{
               flex:2;
             }
@@ -1022,7 +1059,12 @@ a:hover{
   }
 }
 .modalShade {
+  &.shown{
+    display: flex;
+  }
   display:none;
+  justify-content: center;
+  align-items: center;
   position:absolute;
   background-color: rgba(0,0,0,0.5);
   z-index: 10;
@@ -1034,7 +1076,7 @@ a:hover{
     padding: 40px 30px 30px;
     background: #fff;
     width: 500px;
-    margin: 200px auto;
+    // margin: 200px auto;
     position: relative;
     .title{
       position: absolute;
@@ -1048,6 +1090,9 @@ a:hover{
       color:#666666;
       font-size: 14px;
       background: #eeeeee;
+      .close{
+        margin-top:7px;
+      }
     }
     .content{
       // margin: 50px 0;

@@ -15,3 +15,120 @@
     }
   }
 }
+
+#freightTrack{
+  .s-modal{
+    width: auto;
+  }
+  .track{
+    padding: 95px 180px;
+    ul {
+
+      display: flex;
+      align-items: center;
+      li{
+        position: relative;
+        display: flex;
+        align-items: center;
+        .trackCircle{
+          background: #f0f0f0;
+          &.already{
+            background: #d4ecf8;
+            i{
+              background: #26a0da;
+            }
+          }
+          display:inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          i{
+            background: #cccccc;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            border-radius: 50%;
+          }
+        }
+        .siteInfo{
+          width: 100px;
+          &.top{
+            top:-48px;
+          }
+          position: absolute;
+          bottom: -48px;
+          left:0px;
+          width: 100%;
+          h3{
+            font-size: 14px;
+          }
+          p{
+            font-size: 12px;
+          }
+        }
+        &:last-child{
+          .siteInfo{
+            .addressName, p{
+              color:#26a0da;
+            }
+          }
+          &:after{
+              background: #fff;
+              width: 50px;
+          }
+        }
+        &:after {
+          content:"";
+          width:100px;
+          height: 1px;
+          margin:0 10px;
+          background: #cccccc;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.publicSource{
+  margin-top: 30px;
+  .btnOption{
+    margin-top: 40px;
+    button {
+      margin-right: 20px;
+      &.cancle {
+        color: #666666;
+        background: #eeeeee;
+      }
+    }
+  }
+  .field{
+    margin-bottom: 20px;
+    display: flex;
+    font-size:14px;
+    align-items: center;
+    .labelText {
+      width: 100px;
+      text-align: right;
+      margin-right: 5px;
+      display: inline-block;
+      i{
+        margin-right: 5px;
+        font-style: normal;
+        color: #f5255e;
+      }
+    }
+    select{
+      width: 180px;
+      box-sizing: border-box;
+    }
+    .fieldContent {
+      .selectTime{
+        width: 180px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

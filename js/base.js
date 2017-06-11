@@ -1,7 +1,7 @@
 $(function($){
   //公用弹窗事件
-  $(".s-modal .ok, .s-modal .cancle").click(function(){
-    $(this).parents(".modalShade").hide();
+  $(".s-modal .ok, .s-modal .cancle, .s-modal .close").click(function(){
+    $(this).parents(".modalShade").removeClass("shown");
   })
 
   //用户中心(使用余额)页面，点击支持。查询余额显示
@@ -224,7 +224,14 @@ function selectSellType(){
 //用户中心(结算页), 添加/编辑地址弹窗
 function addAddress() {
   $(".setttleAccounts .addAddress, .setttleAccounts .editAddress, #addAddress, #editAddress").click(function(){
-    $("#Adressfield").show();
+    $("#Adressfield").addClass("shown");
+  })
+}
+
+//显示弹窗
+function showDialog(eventDom, dialogDom){
+  eventDom.click(function(){
+      dialogDom.addClass("shown");
   })
 }
 //图片点击滑动

@@ -381,5 +381,8 @@
 <script src="./js/base.js"></script>
 <script>
   ScrollOneImg($(".imgMarquee"));
+  //重新计算宽度
+  var boxWidth = $(".productDetail").width();
+  $(".productDetail .left").width(boxWidth-340 + 'px');
 </script>
 </html>

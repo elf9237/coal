@@ -153,11 +153,20 @@ a:hover {
 .w_30 {
   width: 30%;
 }
+.w_548 {
+  width: 548px!important;
+}
 .mt80 {
   margin-top: 80px;
 }
 .mt30 {
   margin-top: 30px;
+}
+.mt20 {
+  margin-top: 20px!important;
+}
+.alignTop {
+  align-items: flex-start !important;
 }
 .selectTime {
   height: 34px;
@@ -840,6 +849,7 @@ a:hover {
 .tableContent {
   display: block;
   margin-top: 40px;
+  overflow: auto;
 }
 .tableContent h3.titleTXT {
   font-size: 20px;
@@ -852,11 +862,14 @@ a:hover {
   border-spacing: 0;
   border-collapse: collapse;
   text-align: left;
+  min-width: 100%;
 }
 .tableContent .tableStyle th {
   background-color: #eeeeee;
   height: 40px;
   box-sizing: border-box;
+  width: 100px;
+  min-width: 100px;
 }
 .tableContent .tableStyle th:first-child::before {
   content: "";
@@ -874,6 +887,22 @@ a:hover {
   height: 60px;
   color: #666;
   padding-left: 22px;
+}
+.tableContent .tableStyle tr td .square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.tableContent .tableStyle tr td .square.red {
+  background: #f35f5f;
+}
+.tableContent .tableStyle tr td .square.blue {
+  background: #26a0da;
+}
+.tableContent .tableStyle tr td .square.green {
+  background: #24cbbf;
 }
 .tableContent .tableStyle tr td .item_id {
   vertical-align: middle;
@@ -895,6 +924,9 @@ a:hover {
   margin-right: 20px;
   text-decoration: none;
   color: #26a0da;
+}
+.tableContent .tableStyle tr td a:last-child {
+  margin-right: 0px;
 }
 .tableContent .tableStyle tr td a:hover {
   color: #55aedf;
@@ -960,6 +992,10 @@ a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.tableContent .tableList .Items li .detail span.noflex {
+  width: 165px;
+  flex: inherit;
 }
 .tableContent .tableList .Items li .detail span.double {
   flex: 2;
@@ -1039,6 +1075,8 @@ a:hover {
 }
 .modalShade {
   display: none;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
@@ -1047,11 +1085,13 @@ a:hover {
   top: 0;
   left: 0;
 }
+.modalShade.shown {
+  display: flex;
+}
 .modalShade .s-modal {
   padding: 40px 30px 30px;
   background: #fff;
   width: 500px;
-  margin: 200px auto;
   position: relative;
 }
 .modalShade .s-modal .title {
@@ -1066,6 +1106,9 @@ a:hover {
   color: #666666;
   font-size: 14px;
   background: #eeeeee;
+}
+.modalShade .s-modal .title .close {
+  margin-top: 7px;
 }
 .modalShade .s-modal .content {
   padding: 30px 0;

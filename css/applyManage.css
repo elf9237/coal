@@ -15,3 +15,110 @@
 .appList .option select {
   margin-right: 40px;
 }
+#freightTrack .s-modal {
+  width: auto;
+}
+#freightTrack .track {
+  padding: 95px 180px;
+}
+#freightTrack .track ul {
+  display: flex;
+  align-items: center;
+}
+#freightTrack .track ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#freightTrack .track ul li .trackCircle {
+  background: #f0f0f0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+#freightTrack .track ul li .trackCircle.already {
+  background: #d4ecf8;
+}
+#freightTrack .track ul li .trackCircle.already i {
+  background: #26a0da;
+}
+#freightTrack .track ul li .trackCircle i {
+  background: #cccccc;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+}
+#freightTrack .track ul li .siteInfo {
+  width: 100px;
+  position: absolute;
+  bottom: -48px;
+  left: 0px;
+  width: 100%;
+}
+#freightTrack .track ul li .siteInfo.top {
+  top: -48px;
+}
+#freightTrack .track ul li .siteInfo h3 {
+  font-size: 14px;
+}
+#freightTrack .track ul li .siteInfo p {
+  font-size: 12px;
+}
+#freightTrack .track ul li:last-child .siteInfo .addressName,
+#freightTrack .track ul li:last-child .siteInfo p {
+  color: #26a0da;
+}
+#freightTrack .track ul li:last-child:after {
+  background: #fff;
+  width: 50px;
+}
+#freightTrack .track ul li:after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  margin: 0 10px;
+  background: #cccccc;
+  display: inline-block;
+  vertical-align: middle;
+}
+.publicSource {
+  margin-top: 30px;
+}
+.publicSource .btnOption {
+  margin-top: 40px;
+}
+.publicSource .btnOption button {
+  margin-right: 20px;
+}
+.publicSource .btnOption button.cancle {
+  color: #666666;
+  background: #eeeeee;
+}
+.publicSource .field {
+  margin-bottom: 20px;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+}
+.publicSource .field .labelText {
+  width: 100px;
+  text-align: right;
+  margin-right: 5px;
+  display: inline-block;
+}
+.publicSource .field .labelText i {
+  margin-right: 5px;
+  font-style: normal;
+  color: #f5255e;
+}
+.publicSource .field select {
+  width: 180px;
+  box-sizing: border-box;
+}
+.publicSource .field .fieldContent .selectTime {
+  width: 180px;
+  box-sizing: border-box;
+}

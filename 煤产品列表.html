@@ -305,7 +305,7 @@
                 <table class="tableStyle">
                   <tr>
                     <th>煤种</th>
-                    <th style="width:15%">供应商</th>
+                    <th style="width:150px">供应商</th>
                     <th>产地</th>
                     <th>交货地</th>
                     <th>价格(元/吨)</th>
@@ -447,4 +447,9 @@
 </body>
 <script src="./js/jquery.js"></script>
 <script src="./js/base.js"></script>
+<script>
+  //重新计算宽度
+  var boxWidth = $(".productMain").width();
+  $(".productMain .condition").width(boxWidth-280 +"px");
+</script>
 </html>
