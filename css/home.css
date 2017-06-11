@@ -204,6 +204,7 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .supply-progress{display: flex;flex-direction: row;justify-content: space-around;align-items: center;}
 .supply-service{display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: center;}
 .supply-service .service-detail{flex: 1;}
+.supply-service .service-detail ul li p{margin-top: 10px;}
 .supply-service .service-detail h1{text-align: left;color: #fff;height: 60px;line-height: 60px;padding-left: 20px;font-size: 20px;margin-top: 60px}
 .supply-service .service-detail h1.title-cooperative{background: url(../images/bg-cooperation.jpg) no-repeat left top;margin-right: 10px}
 .supply-service .service-detail h1.title-service{background: url(../images/bg-service.jpg) no-repeat left top;}
