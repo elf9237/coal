@@ -173,6 +173,7 @@
   margin-right: 5px;
   padding: 10px;
   background: #eee;
+  cursor: pointer;
 }
 
 .enterprise-step ul li.active {
@@ -183,6 +184,9 @@
 .enterprise-table {
   width: 100%;
   border: 1px solid #c1c1c1;
+}
+.enterprise-table.hide {
+  display: none
 }
 
 .enterprise-table tr td:first-child {
