@@ -1,0 +1,42 @@
+#EntrepotDialog .addEntrepotInfo .fieldInput {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+#EntrepotDialog .addEntrepotInfo .fieldInput .lable {
+  margin-right: 8px;
+  min-width: 80px;
+}
+#EntrepotDialog .addEntrepotInfo .fieldInput .lable i {
+  color: red;
+  font-style: normal;
+  margin-right: 5px;
+}
+#EntrepotDialog .addEntrepotInfo .fieldInput .num {
+  margin-left: 8px;
+}
+#EntrepotDialog .addEntrepotInfo .fieldInput .fieldVal .selectAll {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#EntrepotDialog .addEntrepotInfo .fieldInput .fieldVal .selectAll input {
+  margin-right: 5px;
+}
+#EntrepotDialog .addEntrepotInfo .fieldInput .fieldVal ul {
+  overflow: hidden;
+}
+#EntrepotDialog .addEntrepotInfo .fieldInput .fieldVal ul li {
+  float: left;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#EntrepotDialog .addEntrepotInfo .fieldInput .fieldVal ul li input {
+  margin-right: 5px;
+}
+#EntrepotDialog .footerBtn {
+  margin-left: 87px;
+}
