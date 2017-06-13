@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>物流商后台-货源报价</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/applyManage.css">
-  <title>用户中心(资质认证审核通过)</title>
+  <link rel="stylesheet" href="./css/retail.css">
 </head>
 <body>
   <div class="header">
@@ -108,58 +108,53 @@
           <i class="icon-navHome"></i>
           <dl>
               <dt>首页</dt>
-              <dd>企业认证</dd>
-
+              <dd>货源明细</dd>
           </dl>
       </div>
-      <div class="content pb100">
+      <div class="content logistics-content">
         <div class="title">
-          <span>企业认证</span>
+          <span>货源明细</span>
         </div>
-        <div class="publicSource">
-          <div class="enterprise-progress">
-            <div class="enterprise-step mt30">
-              <ul>
-                <li>1、提交证件</li>
-                <li>2、审核证件</li>
-                <li class="active">3、通过认证</li>
-              </ul>
-            </div>
-            <div class="mt10 enterprise-body">
-              <table class="enterprise-table">
-                <tr>
-                  <td><i>*</i>公司名称</td>
-                  <td class="text-msg">
-                    <p>XXXXXXXXXXXX有限公司</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><i>*</i>营业执照</td>
-                  <td>
-                    <div class="uploadingImg">
-                        <ul>
-                          <li>
-                            <img src="./images/loadImg.png" alt="">
-                            <div class="foot">
-                            </div>
-                          </li>
-                        </ul>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>状态</td>
-                  <td class="text-msg">
-                    <p>通过审核<i class="icon-pass"></i></p>
-                    <p>未通过审核<i class="icon-unpass"></i></p>
-                  </td>
-                </tr>
-              </table>
+        <div class="orderDynamic">
+          <div class="left">
+            <div class="orderCaseTable">
+              <div class="tableContent">
+                <table class="tableStyle">
+                  <tr>
+                    <th>转载点</th>
+                    <th>卸载点</th>
+                    <th>货物重量（吨）</th>
+                    <th>货物类型</th>
+                    <th>费用（元）</th>
+                    <th>委托公司</th>
+                  </tr>
+                  <tr>
+                    <td>黑龙江黑河</td>
+                    <td>黑龙江哈尔滨</td>
+                    <td>55</td>
+                    <td>煤炭</td>
+                    <td>5000</td>
+                    <td>公司名称</td>
+                  </tr>
+                 
+                </table>
+                
+              </div>
             </div>
           </div>
-          <div class="btnOption">
-            <button href="#" class="btn">提交审核</button>
-            <button href="#" class="btn cancle">取消</button>
+
+        </div>
+        <div class="publicSource mt100">
+          <h1>物流商报价</h1>
+          <div class="field">
+            <span class="labelText"><i>*</i>运单号：</span>
+            <div class="fieldContent">
+              <input type="text" class="form-control inputStyle" placeholder="请输入运单号">
+            </div>
+          </div>
+          <div class="btnOption mt50">
+            <button href="#" class="btn">确定报价</button>
+            <button href="#" class="btn cancle">已发出</button>
           </div>
         </div>
       </div>
@@ -168,16 +163,4 @@
 </body>
 <script src="./js/jquery.js"></script>
 <script src="./js/base.js"></script>
-<script src="./js/distpicker.data.js"></script>
-<script src="./js/distpicker.js"></script>
-<script src="./js/My97DatePicker/WdatePicker.js"></script>
-
-<script type="text/javascript">
-  $("#distpicker").distpicker({
-    autoSelect: false
-  });
-  $("#unload").distpicker({
-    autoSelect: false
-  });
-</script>
 </html>
