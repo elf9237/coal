@@ -607,6 +607,7 @@ a:hover{
 .main {
   flex:1;
   display: flex;
+  overflow: auto;
   // 公用左侧菜单
   .leftContent {
     position: relative;
@@ -685,9 +686,14 @@ a:hover{
     flex:1;
     overflow: auto;
     background: #ededed;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
     display: flex;
     flex-direction: column;
+    &::after{
+      content: '';
+      padding: 25px;
+      display: inline-block;
+    }
     .nav_bar{
       padding: 25px 20px;
       color:#999;
@@ -716,6 +722,7 @@ a:hover{
       margin:0 60px;
       padding: 30px;
       flex:1;
+      -ms-flex:none;
       .title {
         border-bottom: 1px solid #c1c1c1;
         display: flex;
@@ -831,6 +838,16 @@ a:hover{
     font-size: 20px;
     margin: 20px 0;
   }
+  .operate{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    i{
+      font-style: normal;
+      margin-right: 8px;
+    }
+  }
   .tableStyle{
     table-layout: fixed;
     width: 100%;
@@ -842,7 +859,10 @@ a:hover{
     th {
       background-color: #eeeeee;
       height: 40px;
-      box-sizing: border-box;
+      input{
+        vertical-align: middle;
+        margin: 0px 5px 0 0;
+      }
       // width:100px;
       min-width: 100px;
       // max-width: 300px;
@@ -857,6 +877,9 @@ a:hover{
     }
     tr {
       td{
+        input{
+          margin: 0px 5px 0 0;
+        }
         .square{
           display: inline-block;
           width: 20px;

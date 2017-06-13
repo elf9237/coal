@@ -122,3 +122,427 @@
   width: 180px;
   box-sizing: border-box;
 }
+.supplyDetail {
+  color: #666666;
+}
+.supplyDetail .step {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.supplyDetail .step .process .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d4ecf8;
+  display: inline-block;
+}
+.supplyDetail .step .process .circle i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  font-size: 14px;
+  color: #fff;
+  background: #26a0da;
+  font-style: normal;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+.supplyDetail .step .process .txt {
+  margin-top: 5px;
+}
+.supplyDetail .step .line {
+  height: 1px;
+  background: #cccccc;
+  margin: 0 20px;
+  flex: 1;
+}
+.supplyDetail .offerInfo {
+  margin-top: 30px;
+  padding: 15px;
+  background: #f4fafd;
+}
+.supplyDetail .offerInfo h2 {
+  margin-bottom: 10px;
+}
+.supplyDetail .offerInfo h2 span {
+  color: #f5255e;
+  margin-left: 10px;
+}
+.supplyDetail .offerInfo .offerDetail {
+  display: flex;
+}
+.supplyDetail .offerInfo .offerDetail span {
+  flex: 1;
+}
+.supplyDetail .offerInfo .offerDetail span i {
+  margin-left: 10px;
+  color: #f5255e;
+  font-style: normal;
+}
+.supplyDetail .supplyTabel {
+  margin-top: 30px;
+}
+.supplyDetail .supplyTabel .head {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.supplyDetail .supplyTabel .tableContent {
+  margin-top: 0px;
+}
+.supplyDetail .payWay {
+  margin-top: 30px;
+}
+.supplyDetail .payWay h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.supplyDetail .payWay p {
+  display: flex;
+  align-items: center;
+}
+.supplyDetail .payWay p input {
+  margin-right: 10px;
+}
+.supplyDetail .affirm {
+  margin-top: 50px;
+}
+/*资质认证*/
+.btn-link {
+  width: auto;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #337ab7;
+  font-weight: 400;
+}
+.btn-link:hover {
+  background: none;
+  color: #000;
+}
+.btn-link-gray {
+  color: #666;
+}
+.field .btn-link-gray:hover {
+  color: #666;
+  text-decoration: none;
+}
+.pb100 {
+  padding-bottom: 100px;
+}
+.main .rightContent .content.pb100 {
+  padding-bottom: 100px;
+}
+.enterprise-step ul {
+  display: flex;
+  border-bottom: 1px solid #c1c1c1;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+.enterprise-step ul li {
+  margin-right: 5px;
+  padding: 10px;
+  background: #eee;
+}
+.enterprise-step ul li.active {
+  background: #26a0da;
+  color: #fff;
+}
+.enterprise-table {
+  width: 100%;
+  border: 1px solid #c1c1c1;
+}
+.enterprise-table tr td:first-child {
+  padding: 20px;
+  width: 10%;
+  border-bottom: 1px solid #c1c1c1;
+  background: #eee;
+  font-size: 14px;
+}
+.enterprise-table tr td:first-child i {
+  padding-right: 5px;
+  width: 5px;
+  height: 20px;
+  color: red;
+  text-align: center;
+  line-height: 20px;
+}
+.enterprise-table tr td .ipt {
+  margin-left: 30px;
+  padding-left: 10px;
+  height: 30px;
+  min-width: 200px;
+  border: none;
+  line-height: 30px;
+}
+.enterprise-table tr td:nth-child(2) {
+  border-bottom: 1px dashed #c1c1c1;
+}
+.enterprise-table tr td.text-msg {
+  padding: 40px;
+}
+.enterprise-table tr td.text-msg p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.enterprise-table tr td.text-msg p .icon-pass {
+  margin-left: 20px;
+}
+.enterprise-table tr td.text-msg p .icon-unpass {
+  margin-left: 20px;
+}
+.enterprise-table tr td.text-msg p {
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.enterprise-table .uploadingImg {
+  margin: 10px 0 0px 40px;
+}
+.enterprise-table .uploadingImg ul {
+  overflow: auto;
+}
+.enterprise-table .uploadingImg ul li.mr150 {
+  margin-right: 150px;
+}
+.enterprise-table .uploadingImg ul li {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 120px;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.enterprise-table .uploadingImg ul li .icon-add {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+}
+.enterprise-table .uploadingImg ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.enterprise-table .uploadingImg ul li .foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 18px;
+  width: 100%;
+  height: 60px;
+  background: url("../images/imgloadBg.png") repeat;
+  color: #fff;
+  line-height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.enterprise-table .uploadingImg ul li .foot > span {
+  display: flex;
+  align-items: center;
+}
+.enterprise-table .uploadingImg ul li .foot i {
+  margin-right: 10px;
+}
+.main .rightContent .content .option {
+  margin-top: 30px;
+}
+.main .rightContent .content .option button {
+  margin-right: 20px;
+}
+.icon-pass {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-remeber.png);
+}
+.icon-unpass {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-unpass.png);
+}
+.btn-link {
+  width: auto;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #337ab7;
+  font-weight: 400;
+}
+.btn-link:hover {
+  background: none;
+  color: #000;
+}
+.btn-link-gray {
+  color: #666;
+}
+.field .btn-link-gray:hover {
+  color: #666;
+  text-decoration: none;
+}
+.pb100 {
+  padding-bottom: 100px;
+}
+.main .rightContent .content.pb100 {
+  padding-bottom: 100px;
+}
+.enterprise-step ul {
+  display: flex;
+  border-bottom: 1px solid #c1c1c1;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+.enterprise-step ul li {
+  margin-right: 5px;
+  padding: 10px;
+  background: #eee;
+}
+.enterprise-step ul li.active {
+  background: #26a0da;
+  color: #fff;
+}
+.enterprise-table {
+  width: 100%;
+  border: 1px solid #c1c1c1;
+}
+.enterprise-table tr td:first-child {
+  padding: 20px;
+  width: 10%;
+  border-bottom: 1px solid #c1c1c1;
+  background: #eee;
+  font-size: 14px;
+}
+.enterprise-table tr td:first-child i {
+  padding-right: 5px;
+  width: 5px;
+  height: 20px;
+  color: red;
+  text-align: center;
+  line-height: 20px;
+}
+.enterprise-table tr td .ipt {
+  margin-left: 30px;
+  padding-left: 10px;
+  height: 30px;
+  min-width: 200px;
+  border: none;
+  line-height: 30px;
+}
+.enterprise-table tr td:nth-child(2) {
+  border-bottom: 1px dashed #c1c1c1;
+}
+.enterprise-table tr td.text-msg {
+  padding: 40px;
+}
+.enterprise-table tr td.text-msg p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.enterprise-table tr td.text-msg p .icon-pass {
+  margin-left: 20px;
+}
+.enterprise-table tr td.text-msg p .icon-unpass {
+  margin-left: 20px;
+}
+.enterprise-table tr td.text-msg p {
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.enterprise-table .uploadingImg {
+  margin: 10px 0 0px 40px;
+}
+.enterprise-table .uploadingImg ul {
+  overflow: auto;
+}
+.enterprise-table .uploadingImg ul li.mr150 {
+  margin-right: 150px;
+}
+.enterprise-table .uploadingImg ul li {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 120px;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.enterprise-table .uploadingImg ul li .icon-add {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+}
+.enterprise-table .uploadingImg ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.enterprise-table .uploadingImg ul li .foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 18px;
+  width: 100%;
+  height: 60px;
+  background: url("../images/imgloadBg.png") repeat;
+  color: #fff;
+  line-height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.enterprise-table .uploadingImg ul li .foot > span {
+  display: flex;
+  align-items: center;
+}
+.enterprise-table .uploadingImg ul li .foot i {
+  margin-right: 10px;
+}
+.main .rightContent .content .option {
+  margin-top: 30px;
+}
+.main .rightContent .content .option button {
+  margin-right: 20px;
+}
+.icon-pass {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon-remeber.png");
+}
+.icon-unpass {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon-unpass.png");
+}

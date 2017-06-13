@@ -3,7 +3,14 @@ $(function($){
   $(".s-modal .ok, .s-modal .cancle, .s-modal .close").click(function(){
     $(this).parents(".modalShade").removeClass("shown");
   })
-
+  //表格全选
+  $(".tableStyle th").find("input[type='checkbox']").click(function(){
+    if($(this).prop("checked")) {
+      $(this).parents(".tableStyle").find("td input[type='checkbox']").prop("checked", true);
+    } else {
+      $(this).parents(".tableStyle").find("td input[type='checkbox']").prop("checked", false);
+    }
+  })
   //用户中心(使用余额)页面，点击支持。查询余额显示
   $(".BalanceContent .queryMoney").click(function(){
     $(".balanceInfo").show();
@@ -296,6 +303,29 @@ function countDown () {
         }
       }, 1000);
     }
+  })
+}
+//用户中心(仓库管理) 添加仓库选择配置地区
+function selectDeliver(){
+  $("#EntrepotDialog .selectAll").find("input[type='checkbox']").click(function(){
+    if($(this).prop("checked")){
+      $(this).parents(".selectAll").siblings("ul").find("li input[type='checkbox']").prop("checked", true);
+    } else {
+      $(this).parents(".selectAll").siblings("ul").find("li input[type='checkbox']").prop("checked", false);
+    }
+  })
+}
+//表格删除行
+function batchDel () {
+  $(".tableContent .batch-del").click(function(){
+    var selectItems = $(this).parents(".operate").siblings(".tableStyle").find("td input[type='checkbox']:checked");
+    selectItems.each(function(index,item){
+      $(item).parents("tr").remove();
+    })
+    $(this).parents(".operate").siblings(".tableStyle").find("th input[type='checkbox']:checked").prop("checked", false);
+  })
+  $(".tableContent .del").click(function(){
+    $(this).parents("tr").remove();
   })
 }
 

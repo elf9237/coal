@@ -214,6 +214,8 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .footer{height: 330px;background: #26a0da;}
 .footer-link{height: 300px;color:#fff;width:1250px;margin: 0 auto;justify-content: space-between;align-items: center;flex-direction: row;flex: 1;display: flex}
 .footer-logo{display: flex;align-items: center;height: 300px;flex: 1}
+.footer-logo .txt{font-size: 16px;background: transparent;color:#fff;margin-top: 5px}
+
 .icon-phone{width: 12px;height: 13px;display: inline-block;background: url(../images/icon-phone.png) no-repeat center;}
 .icon-kef{width: 12px;height: 13px;display: inline-block;background: url(../images/icon-kef.png) no-repeat center;}
 .footer-link .link-other{display: flex;flex-direction: row;justify-content: space-around;align-items: center; flex:2;height: 300px}
