@@ -78,10 +78,10 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .hc_lnav .allbtn ul li .pop{position:absolute;border:1px solid #26a0da;background:url(../images/border-nav-1px.png) no-repeat left top; padding-bottom:10px;background-color:#fff;padding-left:20px;width:240px;padding-right:20px;top:0px;padding-top:10px;left:220px;display: none;border-left: none}
 .hc_lnav .allbtn ul li .pop h3{display:none;font-size:14px}
 .hc_lnav .allbtn ul li .pop dl{padding-bottom:6px;color:#666666;padding-top:6px}
-.hc_lnav .allbtn ul li .pop dl a{color:#666666;margin-left:10px;margin-right:18px}
+.hc_lnav .allbtn ul li .pop dl a{color:#666666;width: 25%;display: inline-block;box-sizing: border-box;margin: 0;}
 .hc_lnav .allbtn ul li .pop dl a.un{color:#a5a5a5}
 .hc_lnav .allbtn ul li .pop dt{padding-left:0px;width:200px;padding-bottom: 10px;border-bottom: 1px solid #ccc;margin-bottom: 5px;font-size: 14px;font-weight: 800}
-.hc_lnav .allbtn ul li .pop dd{width:215px;margin-left:-12px;}
+.hc_lnav .allbtn ul li .pop dd{width:215px;}
 .hc_lnav .allbtn ul li .pop .act{width:640px;height:80px;overflow:hidden;padding-top:10px}
 
 .hc_lnav .allbtn:hover ul{display:block}/*控制一级菜单显示隐藏*/
@@ -92,6 +92,8 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .hc_lnav .allbtn ul li:hover .tx a i{background-position:0px -25px}
 
 .hc_lnav .allbtn ul li:hover .pop{display:block;top:0px;left:220px}/*控制二级菜单显示隐藏*/
+
+.hc_lnav .allbtn ul li:last-child:hover .pop{bottom: 0;top:auto;background: none;background-color: #fff;}
 .hc_lnav .allbtn ul li:hover .pop dl a.un{color:#a5a5a5;text-decoration:none}
 .hc_lnav .allbtn ul li:hover dl{color:#6e6e6e}
 .hc_lnav .allbtn ul li:hover a{color:#666666}
@@ -159,7 +161,7 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .product-alone .product-ad h1 .icon-product{margin-right: 10px}
 .product-alone .product-ad-img{width: 200px;height: 408px;}
 .product-alone .product-ad-img img{height: 100%}
-.product-alone .product-list-bug{align-items: flex-start;}
+.product-alone .product-list-bug{flex:1;}
 .product-list-bug{margin-left:10px;}
 .product-list-bug .title{display: flex;justify-content: space-between;align-items: flex-start;flex-direction: row;margin-top: 0px;flex: 1;height: 22px;line-height: 22px}
 .product-list-bug .title ul{margin-top: 0px}
@@ -168,16 +170,29 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .product-list-bug .title ul li a:hover,.product-list-bug .title ul li.active a,.product-list-bug .title ul li a:focus{color:#26a0da;text-decoration: none}
 .product-list-bug .tableContent{margin-top: 12px;}
 .product-list-bug .tips-more .icon-next{margin-left: 10px}
-.product-list-bug .tableContent .tableStyle tr th{border-top: 2px solid #26a0da}
-.product-transaction-list .btn-gray{padding:10px;text-align: center;width: 220px}
+.product-list-bug .tableContent .tableStyle tr th{border-top: 2px solid #26a0da;min-width: auto}
+.product-transaction-list .btn-gray{padding:10px;text-align: center;width: 220px;box-sizing: border-box;width: 100%;}
 .product-list-msg{display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;margin-left: 10px}
-.product-transaction-list{width:260px;height: 410px;background:#26a0da;padding:30px 20px;}
+.product-transaction-list{width:260px;height: 410px;background:#f1f1f1;color:black;border: 1px solid #ccc;}
 .product-list-msg h1{font-size: 20px;color: #666;display: flex;flex-direction: row;justify-content: flex-start;align-items: center;}
 .product-list-msg h1 .icon-product{margin-right: 10px}
-.product-transaction-list table{color:#fff;font-size: 12px}
-.product-transaction-list table tr th{font-size: 14px;border-bottom: 1px solid #fff;padding:0px 0 10px;}
-.product-transaction-list table tr td:first-child{max-width: 50px}
-.product-transaction-list table.transaction-table tr td{height: 35px;line-height: 35px;max-width: 60px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-right: 10px;cursor: pointer;}
+.product-transaction-list table{color:black;font-size: 12px;width: 100%;}
+.product-transaction-list table tbody {background-color: #fff;}
+.product-transaction-list table tr th{font-size: 14px;border-bottom: 1px solid #fff;line-height: 50px;}
+.product-transaction-list table tr th:first-child{
+  padding-left: 10px;
+}
+.product-transaction-list table tr td:first-child{max-width: 50px;padding-left: 10px;}
+.product-transaction-list table.transaction-table tr td{height: 35px;line-height: 35px;max-width: 60px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-right: 10px;cursor: pointer;text-align: left;border-bottom: 1px dashed #ccc;}
+.product-transaction-list table.transaction-table tr:last-child td{
+  border: none;
+}
+.product-transaction-list table.transaction-table tr td:nth-child(3){
+  color:#ff6e26;
+}
+.product-transaction-list table.transaction-table tr td:nth-child(4){
+  color:#999999
+}
 .product-transaction-list table.transaction-table tr td .badge{position: absolute;left: 0px;top:0px;}
 .product-list-bug .tableContent .tableStyle tr td{height: 62px}
 .product-list-bug .tableContent .tableStyle tr td a.icon-link{color:#666;}
