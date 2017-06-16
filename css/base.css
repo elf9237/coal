@@ -560,6 +560,20 @@ a:hover {
   background: url('../images/icon-laba.png') no-repeat;
   vertical-align: middle;
 }
+.icon-market-money {
+  display: inline-block;
+  width: 40px;
+  height: 42px;
+  background: url('../images/icon-market-money.png') no-repeat;
+  vertical-align: middle;
+}
+.icon-market-weight {
+  display: inline-block;
+  width: 40px;
+  height: 42px;
+  background: url('../images/icon-market-weight.png') no-repeat;
+  vertical-align: middle;
+}
 .header {
   padding: 18px 60px 18px 34px;
   background-color: #fff;
@@ -1349,4 +1363,31 @@ a:hover {
   margin-left: 15px;
   color: #26a0da;
 }
-.addEntrepot i{font-style: normal;padding-right: 5px}
+.addEntrepot i {
+  font-style: normal;
+  padding-right: 5px;
+}
+#tab ul {
+  border-bottom: 1px solid #cccccc;
+  overflow: auto;
+}
+#tab ul li {
+  padding: 10px 20px;
+  color: #666666;
+  background: #eeeeee;
+  float: left;
+  cursor: pointer;
+}
+#tab ul li.on {
+  background: #26a0da;
+  color: #fff;
+}
+#tab .tabContent {
+  margin-top: 15px;
+}
+#tab .tabContent .containTab {
+  display: none;
+}
+#tab .tabContent .containTab.selected {
+  display: block;
+}

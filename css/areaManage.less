@@ -1,0 +1,104 @@
+// out: ../css/areaManage.css, sourcemap: false, compress: false
+.areaManage {
+  color:#666666;
+  .topFiltrate {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    #distpicker select {
+      width: 140px;
+      box-sizing: border-box;
+    }
+    .btn-ok{
+      margin-left: 10px;
+    }
+    .filterDay{
+      margin-left: 30px;
+      li{
+        &.on{
+          border: none;
+          background: #26a0da;
+          color:#fff;
+        }
+        float:left;
+        margin-right: 15px;
+        padding: 5px 15px;
+        border:1px solid #cccccc;
+        border-radius: 16px;
+        float: left;
+        cursor: pointer;
+      }
+    }
+  }
+  .sumMoney{
+    margin-top: 20px;
+    ul{
+      overflow: hidden;
+      li{
+        i{
+          margin-right: 10px;
+        }
+        float:left;
+        margin-right: 20px;
+        background: #26a0da;
+        display:flex;
+        padding: 40px 40px;
+        align-items: center;
+        justify-content: center;
+        .info {
+          h2{
+            font-weight: 600;
+            color: #fff;
+            font-size: 36px;
+          }
+          p{
+            color:#fffefe;
+            margin-top: 5px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .sumList{
+    margin-top: 20px;
+    overflow: hidden;
+    li{
+      margin-right: 20px;
+      background-color: #26a0da;
+      float: left;
+      width:300px;
+      min-height: 116px;
+      padding:15px ;
+      p{
+        line-height: 28px;
+        font-size: 14px;
+        color:#fff;
+      }
+    }
+  }
+  .sellTop{
+    margin-top: 65px;
+    .top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2{
+        font-size: 20px;
+      }
+    }
+    .tableContent{
+      margin-top: 20px;
+    }
+  }
+  #sellGraph{
+    margin-top: 50px;
+    height: 370px;
+  }
+  .orderGraph {
+    margin-top: 50px;
+    #orederNumGraph, #orederMoneyGraph{
+      height: 370px;
+    }
+  }
+}

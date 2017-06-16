@@ -127,7 +127,7 @@
           <div class="field">
             <span class="labelText">已选地区：</span>
             <div class="fieldContent area-tips">
-              <span class="area-tips-alone">
+              <!-- <span class="area-tips-alone">
                 <span class="tips-title">黑龙江</span>
                 <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </span>
@@ -138,7 +138,7 @@
               <span class="area-tips-alone">
                 <span class="tips-title">黑龙江</span>
                 <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </span>
+              </span> -->
             </div>
           </div>
           <div class="field add-area-sel">
@@ -146,21 +146,21 @@
             <div class="fieldContent add-area-sel-wrap">
               <span class="red">双击选择区域</span>
               <form class="form-inline mt10">
-                    <div data-toggle="distpicker" id="distpicker">
-                      <div class="form-group">
-                        <label class="sr-only" for="province">Province</label>
-                        <select class="form-control" id="province" data-province="省"></select>
-                      </div>
-                      <div class="form-group">
-                        <label class="sr-only" for="city">City</label>
-                        <select class="form-control" id="city" data-city="市"></select>
-                      </div>
-                      <div class="form-group">
-                        <label class="sr-only" for="district">District</label>
-                        <select class="form-control" id="district" data-district="区"></select>
-                      </div>
-                    </div>
-                  </form>
+                <div data-toggle="distpicker" id="distpicker">
+                  <div class="form-group">
+                    <label class="sr-only" for="province">Province</label>
+                    <select class="form-control" id="province" data-province="省"></select>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="city">City</label>
+                    <select class="form-control" id="city" data-city="市"></select>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="district">District</label>
+                    <select class="form-control" id="district" data-district="区"></select>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
           <div class="btnOption">
@@ -181,8 +181,6 @@
   $("#distpicker").distpicker({
     autoSelect: false
   });
-  $("#unload").distpicker({
-    autoSelect: false
-  });
+  addArea();
 </script>
 </html>

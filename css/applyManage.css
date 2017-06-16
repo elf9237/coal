@@ -547,24 +547,55 @@
   height: 20px;
   background: url("../images/icon-unpass.png");
 }
-
-
-
-
-
-
-
-
-.tips-strength{margin-left: 100px;}
-.tips-strength .tips{padding: 1px 50px;color: #fff;background: #F44336;display: inline-block;font-size: 12px}
-.tips-strength .tips.tips-middle{background: #03A9F4}
-.tips-strength .tips.tips-max{background: #4CAF50}
-.add-sun-title{font-size: 18px;margin-left: 20px;}
-.publicSource.mt10{
+.tips-strength {
+  margin-left: 100px;
+}
+.tips-strength .tips {
+  padding: 1px 50px;
+  color: #fff;
+  background: #F44336;
+  display: inline-block;
+  font-size: 12px;
+}
+.tips-strength .tips.tips-middle {
+  background: #03A9F4;
+}
+.tips-strength .tips.tips-max {
+  background: #4CAF50;
+}
+.add-sun-title {
+  font-size: 18px;
+  margin-left: 20px;
+}
+.publicSource.mt10 {
   margin-top: 10px;
 }
-.area-tips{display: flex;justify-content: flex-start;align-items: center;flex-direction: row}
-.area-tips .area-tips-alone{display: flex;border:1px solid #ccc;justify-content: space-around;align-items: center;padding: 2px 8px;margin-right: 5px}
-.add-area-sel-wrap{display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;}
-.publicSource .field .labelText.labelText-area-sel{align-items: flex-start;}
-.publicSource .field.add-area-sel{align-items: flex-start;}
+.area-tips {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.area-tips .area-tips-alone {
+  display: flex;
+  border: 1px solid #ccc;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px 8px;
+  margin-right: 5px;
+}
+.area-tips .close-btn {
+  cursor: pointer;
+}
+.add-area-sel-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.publicSource .field .labelText.labelText-area-sel {
+  align-items: flex-start;
+}
+.publicSource .field.add-area-sel {
+  align-items: flex-start;
+}

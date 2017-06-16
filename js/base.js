@@ -329,7 +329,40 @@ function batchDel () {
   })
 }
 
+//用户中心(出货统计) 选择天数条件
+function tabClick (parentDom, clickDom) {
+  parentDom.find(clickDom).click(function(){
+    $(this).addClass('on').siblings().removeClass('on');
+  })
+}
 
+//tab切换
+function tab(){
+  $("#tab").find("ul li").click(function(){
+    $(this).addClass("on").siblings().removeClass("on");
+    var index = $(this).index();
+    $(this).parent("ul").siblings(".tabContent").find(".containTab").eq(index).addClass("selected").siblings(".containTab").removeClass("selected");
+  })
+}
+
+function addArea(){
+  $(".add-area-sel-wrap").find("#district").change(function(){
+    var area = $("#district").val();
+    var isRepeat = false;
+    $(".area-tips-alone").each(function(index, item) {
+      if($(this).find($(".tips-title")).text() == area) {
+        isRepeat = true;
+      }
+    })
+    if(area == '' || isRepeat) return;
+    var addDom = '<span class="area-tips-alone"><span class="tips-title">'+area+'</span><span class="close-btn">×</span></span>';
+    $(".area-tips").append(addDom);
+  })
+
+  $(".area-tips").delegate('.close-btn', 'click',function(){
+    $(this).parents(".area-tips-alone").remove();
+  })
+}
 initMenuEvent();
 fillMoreInfo();
 getMoreCondition();
