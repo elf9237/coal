@@ -139,6 +139,9 @@ a:hover{
 ._inlineBlock{
   display: inline-block;
 }
+.noborder{
+  border:none!important;
+}
 
 // 图标
 .icon-address {
@@ -1344,14 +1347,15 @@ a:hover{
 }
 .addEntrepot i{font-style: normal;padding-right: 5px}
 #tab{
-  ul{
+  >ul{
     border-bottom: 1px solid #cccccc;
     overflow: auto;
-    li{
+    >li{
       padding:10px 20px;
       color:#666666;
       background: #eeeeee;
       float: left;
+      margin-right: 2px;
       cursor: pointer;
       &.on{
         background: #26a0da;

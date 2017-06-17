@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/sellOrderDetail.css">
+  <title>用户中心(卖家订货详情)</title>
+</head>
+<body>
+  <div class="header">
+      <i class="logo"></i>
+      <div class="user">
+          <span class="msg">
+      <i>8</i>
+    </span>
+          <span class="ques"></span>
+          <span class="userName">
+            045600001
+            <ul>
+              <li>账号设置</li>
+              <li>安全退出</li>
+            </ul>
+          </span>
+          <img class="userImg" src="./images/11.png" alt="">
+      </div>
+  </div>
+  <div class="main">
+    <div class="leftContent">
+        <ul>
+            <li>
+                <dl>
+                    <dt>
+                      <i class="icon icon-home"></i>
+                      <span class="text">首页</span>
+                      <i class="icon-more"></i>
+                    </dt>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                      <i class="icon icon-order"></i>
+                      <span class="text">订单管理</span>
+                      <i class="icon-more"></i>
+                    </dt>
+                    <dd>买货订单</dd>
+                    <dd>卖货订单</dd>
+                    <dd>发货单列表</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="in">
+                      <i class="icon icon-produce"></i>
+                      <span class="text">产品管理</span>
+                      <i class="icon-more"></i>
+                    </dt>
+                    <dd>产品列表</dd>
+                    <dd class="selected">供应管理</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                      <i class="icon icon-star"></i>
+                      <span class="text">我的收藏</span>
+                      <i class="icon-more"></i>
+                    </dt>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                      <i class="icon icon-expense"></i>
+                      <span class="text">消费明细</span>
+                      <i class="icon-more"></i>
+                    </dt>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                      <i class="icon icon-address"></i>
+                      <span class="text">地址管理</span>
+                      <i class="icon-more"></i>
+                    </dt>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                      <i class="icon icon-service"></i>
+                      <span class="text">在线客服</span>
+                      <i class="icon-more"></i>
+                    </dt>
+                </dl>
+            </li>
+        </ul>
+        <div class="setting">
+            <i class="icon-setting"></i>
+        </div>
+    </div>
+    <div class="rightContent">
+      <div class="nav_bar">
+          <i class="icon-navHome"></i>
+          <dl>
+              <dt>首页</dt>
+              <dd>订单列表</dd>
+              <dd>订单详情</dd>
+          </dl>
+      </div>
+      <div class="content">
+        <div class="baseInfo">
+          <div class="title">
+            <span>订单详情</span>
+          </div>
+          <div id="tab">
+            <ul>
+              <li class="on">订单详情</li>
+              <li>出库/发货记录</li>
+              <li>收款记录</li>
+            </ul>
+            <div class="tabContent">
+              <div class="containTab selected">
+                <div class="verticalTabel">
+                  <h3 class="titleTXT">基本信息</h3>
+                  <ul>
+                    <li>
+                      <span class="lable">订单号</span>
+                      <span class="text">2016082391211</span>
+                      <span class="lable">订单状态</span>
+                      <span class="text">待确认 | 待付款 | 已付款 | 已发货 | 已完成 | 已取消</span>
+                    </li>
+                    <li>
+                      <span class="lable">订货方</span>
+                      <span class="text">上为科技 <a href="#" class="showUser">【显示购货人信息 】</a></span>
+                      <span class="lable">下单时间</span>
+                      <span class="text">2016-08-23 17:46:07</span>
+                    </li>
+                    <li>
+                      <span class="lable">支付方式</span>
+                      <span class="text">余额支付，支付宝，掌柜通，微信支付<a href="#" class="editPayway">【修改】</a></span>
+                      <span class="lable">付款时间</span>
+                      <span class="text">2016-08-23 17:24:06</span>
+                    </li>
+                    <li>
+                      <span class="lable">配送方式</span>
+                      <span class="text">快捷快递，11111111 <a href="#" class="editPost">【修改】</a></span>
+                      <span class="lable">发货时间</span>
+                      <span class="text">2016-08-23 17:24:06</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="verticalTabel">
+                  <h3 class="titleTXT">其他信息</h3>
+                  <ul>
+                    <li>
+                      <span class="lable">客户留言</span>
+                      <span class="text">无</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="verticalTabel">
+                  <h3 class="titleTXT">其他信息</h3>
+                  <ul>
+                    <li>
+                      <span class="lable">收货人</span>
+                      <span class="text">ccccc</span>
+                    </li>
+                    <li>
+                      <span class="lable">地址</span>
+                      <span class="text">【中国 福建 宁德 福安市】冠后路华联园5幢107号 华硕电脑<a href="#" javascript:void(0) class="editAddress">【修改】</a></span>
+                    </li>
+                    <li>
+                      <span class="lable">手机</span>
+                      <span class="text">15862345962</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tableContent">
+                  <h3 class="titleTXT">订单明细</h3>
+                  <table class="tableStyle">
+                    <tr>
+                      <th style="width:30%">货品</th>
+                      <th>单价（元/吨）</th>
+                      <th>库存（吨）</th>
+                      <th>剩余库存（吨）</th>
+                      <th>总货款（元）</th>
+                    </tr>
+                    <tr>
+                      <td>江苏万寨港晋城 6700大卡喷吹煤 【动力煤】</td>
+                      <td>￥839.00</td>
+                      <td>1</td>
+                      <td>11</td>
+                      <td>￥839.00</td>
+                    </tr>
+                  </table>
+                  <div class="pageSize">
+                    <ul>
+                      <li class="pre"><a href="#"><i class="icon-pre"></i></a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">6</a></li>
+                      <li><a href="#">7</a></li>
+                      <li><a href="#">8</a></li>
+                      <li><a href="#">9</a></li>
+                      <li class="next"><a href="#"><i class="icon-next"></i></a></li>
+                    </ul>
+                    <select class="" name="">
+                      <option value="">10条/页</option>
+                      <option value="">20条/页</option>
+                      <option value="">30条/页</option>
+                      <option value="">40条/页</option>
+                    </select>
+                    <span class="sizeText">跳至</span>
+                    <input type="text" class="fillPaseSize">
+                    <span class="sizeText">页</span>
+                  </div>
+                </div>
+                <div class="orderParticulars">
+                    <h3 class="titleTXT">订单费用明细</h3>
+                    <div class="particularsC">
+                      <p>=订单总金额：¥5220.00</p>
+                      <p>= 应付金额：¥5120.00</p>
+                      <h2>- 现金支付：¥5106.67 - 余额支付：¥0</h2>
+                      <p>= 剩余支付：¥0</p>
+                    </div>
+                </div>
+                <div class="deliverOption">
+                  <h3 class="titleTXT">订单操作</h3>
+                  <div class="filedContent">
+                    <div class="field">
+                      <span class="lable">操作备注:</span>
+                      <input type="text"  class="form-control flex1">
+                    </div>
+                    <div class="field">
+                      <span class="lable">
+                        当前可执行操作：
+                      </span>
+                      <div class="option">
+                        <a href="#">确认订单</a>
+                        <a href="#">确认收款</a>
+                        <a href="#">取消订单</a>
+                        <a href="#">设为未付款</a>
+                        <a href="#">设为已收货</a>
+                        <a href="#">生成发货单</a>
+                        <a href="#">物流下单</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tableContent">
+                  <h3 class="titleTXT">订单操作</h3>
+                  <table class="tableStyle">
+                    <tr>
+                      <th>操作者</th>
+                      <th>操作时间</th>
+                      <th>订单状态</th>
+                      <th>付款状态</th>
+                      <th>发货状态</th>
+                      <th>备注</th>
+                    </tr>
+                    <tr>
+                      <td>小土豆</td>
+                      <td>2017-06-03</td>
+                      <td>已完成</td>
+                      <td>已付款</td>
+                      <td>已发货</td>
+                      <td>好人一生平安</td>
+                    </tr>
+                  </table>
+                  <div class="pageSize">
+                    <ul>
+                      <li class="pre"><a href="#"><i class="icon-pre"></i></a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">6</a></li>
+                      <li><a href="#">7</a></li>
+                      <li><a href="#">8</a></li>
+                      <li><a href="#">9</a></li>
+                      <li class="next"><a href="#"><i class="icon-next"></i></a></li>
+                    </ul>
+                    <select class="" name="">
+                      <option value="">10条/页</option>
+                      <option value="">20条/页</option>
+                      <option value="">30条/页</option>
+                      <option value="">40条/页</option>
+                    </select>
+                    <span class="sizeText">跳至</span>
+                    <input type="text" class="fillPaseSize">
+                    <span class="sizeText">页</span>
+                  </div>
+                </div>
+              </div>
+              <div class="containTab">
+                <div class="shipmentRecord">
+                  <div class="info">
+                    <p>【订单号】 &nbsp; 1788888888</p>
+                    <p>【订货方】 &nbsp; <span>小土豆</span></p>
+                    <p>【收货信息】&nbsp; <span>收货人：小土豆 &nbsp;&nbsp; 联系电话：15888888888 &nbsp;&nbsp; 收货地址：福建省太坚强</span></p>
+                  </div>
+                  <div class="recordTabel">
+                    <div class="tableContent">
+                      <h3 class="titleTXT">出货/发货记录</h3>
+                      <table class="tableStyle">
+                        <tr>
+                          <th>货品</th>
+                          <th>单价(元/吨)</th>
+                          <th>库存(吨)</th>
+                          <th>剩余库存(吨)</th>
+                          <th>总货款(元)</th>
+                        </tr>
+                        <tr>
+                          <td>江苏万寨港晋城 6700大卡喷吹煤 【动力煤】</td>
+                          <td>￥839.00</td>
+                          <td>1</td>
+                          <td>11</td>
+                          <td>￥839.00</td>
+                        </tr>
+                      </table>
+                      <div class="pageSize">
+                        <ul>
+                          <li class="pre"><a href="#"><i class="icon-pre"></i></a></li>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">6</a></li>
+                          <li><a href="#">7</a></li>
+                          <li><a href="#">8</a></li>
+                          <li><a href="#">9</a></li>
+                          <li class="next"><a href="#"><i class="icon-next"></i></a></li>
+                        </ul>
+                        <select class="" name="">
+                          <option value="">10条/页</option>
+                          <option value="">20条/页</option>
+                          <option value="">30条/页</option>
+                          <option value="">40条/页</option>
+                        </select>
+                        <span class="sizeText">跳至</span>
+                        <input type="text" class="fillPaseSize">
+                        <span class="sizeText">页</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <p>【状  态】&nbsp;已完成</p>
+                    <p>【出库信息】&nbsp;<span>发货单流水号：201607015454565  &nbsp;&nbsp;   发货日期：2017-05-022 16:19   &nbsp;&nbsp;  仓库：主仓</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="containTab">
+                <div class="shipmentRecord">
+                  <div class="info">
+                    <p>订单号： 1788888888</p>
+                    <p>收货信息：<span>收订单金额：923.88  &nbsp;&nbsp;  尚未支付：0.00  &nbsp;&nbsp;  待确认付款：0.00</span></p>
+                  </div>
+                  <div class="recordTabel">
+                    <div class="tableContent">
+                      <table class="tableStyle">
+                        <tr>
+                          <th>支付流水号</th>
+                          <th>时间</th>
+                          <th>付款金额</th>
+                          <th>支付方式</th>
+                          <th>状态</th>
+                        </tr>
+                        <tr>
+                          <td>2016070100000005</td>
+                          <td>2017-05-21</td>
+                          <td>￥923.88</td>
+                          <td>线下支付</td>
+                          <td>已收款</td>
+                        </tr>
+                      </table>
+                      <div class="pageSize">
+                        <ul>
+                          <li class="pre"><a href="#"><i class="icon-pre"></i></a></li>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">6</a></li>
+                          <li><a href="#">7</a></li>
+                          <li><a href="#">8</a></li>
+                          <li><a href="#">9</a></li>
+                          <li class="next"><a href="#"><i class="icon-next"></i></a></li>
+                        </ul>
+                        <select class="" name="">
+                          <option value="">10条/页</option>
+                          <option value="">20条/页</option>
+                          <option value="">30条/页</option>
+                          <option value="">40条/页</option>
+                        </select>
+                        <span class="sizeText">跳至</span>
+                        <input type="text" class="fillPaseSize">
+                        <span class="sizeText">页</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 修改地址 -->
+  <div class="modalShade" id="Adressfield">
+    <div class="s-modal">
+      <div class="title">
+        修改地址
+      </div>
+      <div class="content">
+        <div class="field">
+          <input type="text" class="form-control inputStyle" placeholder="收货人姓名">
+        </div>
+        <div class="field">
+          <input type="text" class="form-control inputStyle" placeholder="手机号">
+        </div>
+        <div class="field">
+          <input type="text" class="form-control inputStyle _w140" placeholder="区号">
+          <span class="line"></span>
+          <input type="text" class="form-control inputStyle _w286" placeholder="固定电话号码">
+        </div>
+        <div class="field">
+          <form class="form-inline">
+            <div data-toggle="distpicker" id="distpicker">
+              <div class="form-group">
+                <label class="sr-only" for="province">Province</label>
+                <select class="form-control" id="province" data-province="请选择省份"></select>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="city">City</label>
+                <select class="form-control" id="city" data-city="请选择城市"></select>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="district">District</label>
+                <select class="form-control" id="district" data-district="请选择区/县"></select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="field">
+          <textarea name="" id="" cols="30" placeholder="路名或街道地址，门牌号"></textarea>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="#" class="ok">保存</a>
+        <a href="#" class="cancle">取消</a>
+      </div>
+    </div>
+  </div>
+  <!-- 修改物流 -->
+  <div class="modalShade" id="editLogistics">
+    <div class="s-modal">
+      <div class="title">
+        修改物流方式
+      </div>
+      <div class="content">
+        <div class="field">
+          <select name="" id="" class="selectStyle _mr10">
+            <option value="">无需物流</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+          </select>
+          <input type="text" class="form-control inputStyle" placeholder="请输入快递单号/货运公司">
+        </div>
+      </div>
+      <div class="footer">
+        <a href="#" class="ok">保存</a>
+        <a href="#" class="cancle">取消</a>
+      </div>
+    </div>
+  </div>
+  <!-- 显示购货人信息 -->
+  <div class="modalShade" id="showUserInfo">
+    <div class="s-modal">
+      <div class="title">
+        购货人信息
+      </div>
+      <div class="content">
+        <div class="block">
+          <p>电子邮件：<span>888888888@qq.com</span></p>
+          <p>账户余额：<span>￥4545454</span></p>
+          <p>消费积分：<span>1111</span></p>
+          <p>等级积分：<span>111</span></p>
+          <p>会员等级：<span>经销商</span></p>
+        </div>
+        <div class="block noborder">
+          <p>收货人：<span>xxxx</span></p>
+          <p>地址：<span>福建省福州市xxxxx</span></p>
+          <p>邮编：<span>350004</span></p>
+          <p>电话：<span>0591-6666666</span></p>
+          <p>手机：<span>13688888888</span></p>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="#" class="ok">确定</a>
+        <a href="#" class="cancle">取消</a>
+      </div>
+    </div>
+  </div>
+  <!-- 修改支付方式 -->
+  <div class="modalShade" id="editPayWap">
+    <div class="s-modal">
+      <div class="title">
+        购货人信息
+      </div>
+      <div class="content">
+          <div class="payList">
+            <ul>
+              <li>
+                <input type="radio"  name="payType"/>
+                支付宝
+              </li>
+              <li>
+                <input type="radio"  name="payType"/>
+                微信
+              </li>
+              <li>
+                <input type="radio"  name="payType"/>
+                易宝展柜通
+              </li>
+              <li>
+                <input type="radio"  name="payType"/>
+                银行转账/汇款
+              </li>
+              <li>
+                <input type="radio"  name="payType"/>
+                微信APP
+              </li>
+              <li>
+                <input type="radio"  name="payType"/>
+                余额支付
+              </li>
+              <li>
+                <input type="radio"  name="payType"/>
+                积分支付
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="footer">
+        <a href="#" class="ok">保存</a>
+        <a href="#" class="cancle">取消</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/base.js"></script>
+<script src="./js/distpicker.data.js"></script>
+<script src="./js/distpicker.js"></script>
+<script>
+$("#distpicker").distpicker({
+  autoSelect:false
+});
+tab();
+$(".editAddress").click(function(){
+  $("#Adressfield").addClass("shown");
+})
+$(".editPost").click(function(){
+  $("#editLogistics").addClass("shown");
+})
+$(".showUser").click(function(){
+  $("#showUserInfo").addClass("shown");
+})
+$(".editPayway").click(function(){
+  $("#editPayWap").addClass("shown");
+})
+</script>
+</html>

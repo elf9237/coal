@@ -150,7 +150,7 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .ad-tips-wrap .ad-tips-alone .ad-tips-text h1 .title-tip{font-size: 24px}
 .ad-tips-wrap .ad-tips-alone .ad-tips-text p{font-size: 14px}
 
-.product-alone{display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 1250px;margin: 0 auto;}
+.product-alone{display: flex;flex-direction: row;justify-content: space-between;align-items:flex-start;;width: 1250px;margin: 0 auto;}
 
 
 .icon-product-supply{display: inline-block;width: 20px;height: 19px;background:url(../images/icon-product-01.png) no-repeat center;}
@@ -194,7 +194,7 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
   color:#999999
 }
 .product-transaction-list table.transaction-table tr td .badge{position: absolute;left: 0px;top:0px;}
-.product-list-bug .tableContent .tableStyle tr td{height: 62px}
+.product-list-bug .tableContent .tableStyle tr td{height: 61px}
 .product-list-bug .tableContent .tableStyle tr td a.icon-link{color:#666;}
 .product-list-bug .tableContent .tableStyle tr td a.icon-link:hover{color:#26a0da;}
 
