@@ -177,167 +177,24 @@
   box-sizing: border-box;
   margin-left: 15px;
 }
-
-
-
-/*物流商后台*/
-.logistics-content .userInfo .info a {
-  height: 26px;
-  line-height: 26px
+.logistics .tableContent {
+  margin-top: 15px;
 }
-
-.historyInfo p {
-  font-size: 14px
+.logistics .orderList .option {
+  margin-top: 30px;
 }
-
-.logistics-content .userInfo .historyInfo dl dd .num span {
-  margin-left: 0
-}
-
-.logistics-content .userInfo .historyInfo {
-  width: 69%
-}
-
-.logistics-content .userInfo .info {
-  min-width: 280px
-}
-
-.logistics-content .orderDynamic .top {
+.logistics .top {
+  margin-top: 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
-
-.logistics-content .orderDynamic .top .more {
-  font-size: 14px;
-  align-self: flex-end;
-  color: #7ac7f3
+.logistics .top span {
+  font-size: 20px;
 }
-
+.logistics .top a {
+  color: #43addf;
+}
 .orderList {
-  padding: 50px 0;
-  font-size: 14px;
-  align-items: center;
-}
-
-.orderList .option {
-  display: flex;
-  align-items: center;
-}
-
-.orderList .option .btn {
-  margin-right: 70px;
-}
-
-.orderList .option label {
-  font-size: 14px;
-  margin-right: 15px;
-}
-
-.orderList .option input,
-.orderList .option select {
-  margin-right: 40px;
-}
-
-.logistics-content .orderList {
-  padding-bottom: 0
-}
-
-.publicSource .field {
-  margin-bottom: 20px;
-  display: flex;
-  font-size: 14px;
-  align-items: center;
-}
-
-.logistics-content .publicSource .field .labelText {
-  width: 80px;
-  text-align: right;
-  margin-right: 5px;
-  display: inline-block;
-  text-align: left;
-}
-
-.inputStyle {
-  display: inline-block;
-  width: 180px;
-}
-
-.btn-link {
-  width: auto;
-  border: none;
-  border-radius: 0;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: #337ab7;
-  font-weight: 400;
-}
-
-.btn-link:focus, .btn-link:hover {
-  color: #23527c;
-  text-decoration: underline;
-  background-color: transparent;
-}
-
-.logistics-content .publicSource h1 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
-  font-size: 24px
-}
-
-.publicSource .field .labelText i {
-  margin-right: 5px;
-  font-style: normal;
-  color: #f5255e;
-}
-
-.publicSource .field {
-  margin-bottom: 20px;
-  display: flex;
-  font-size: 14px;
-  align-items: center;
-}
-
-.publicSource .field .labelText {
-  width: 100px;
-  text-align: right;
-  margin-right: 5px;
-  display: inline-block;
-}
-
-.publicSource .field select {
-  width: 180px;
-  box-sizing: border-box;
-}
-
-.orderList.conditionList .option select {
-  margin-right: 10px;
-}
-
-.orderList.conditionList {
-  border: none;
-  padding-top: 30px
-}
-
-.publicSource.orderList.conditionList .field {
-  margin-bottom: 0
-}
-
-
-
-/*公用*/
-
-.mt100 {
-  margin-top: 100px
-}
-
-.mt50 {
-  margin-top: 50px
-}
-
-.ml20 {
-  margin-left: 20px
+  margin-top: 20px;
 }

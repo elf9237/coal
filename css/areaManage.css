@@ -60,6 +60,7 @@
 .areaManage .sumList {
   margin-top: 20px;
   overflow: hidden;
+  margin-bottom: 8px;
 }
 .areaManage .sumList li {
   margin-right: 20px;
@@ -98,4 +99,12 @@
 .areaManage .orderGraph #orederNumGraph,
 .areaManage .orderGraph #orederMoneyGraph {
   height: 370px;
+}
+@media screen and (max-width: 1366px) {
+  .areaManage .topFiltrate #distpicker select {
+    width: 110px;
+  }
+  .areaManage .sumList li {
+    width: 250px;
+  }
 }

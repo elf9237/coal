@@ -170,7 +170,7 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .product-list-bug .title ul li a:hover,.product-list-bug .title ul li.active a,.product-list-bug .title ul li a:focus{color:#26a0da;text-decoration: none}
 .product-list-bug .tableContent{margin-top: 12px;}
 .product-list-bug .tips-more .icon-next{margin-left: 10px}
-.product-list-bug .tableContent .tableStyle tr th{border-top: 2px solid #26a0da;min-width: auto}
+.product-list-bug .tableContent .tableStyle tr th{border-top: 2px solid #26a0da;width: auto}
 .product-transaction-list .btn-gray{padding:10px;text-align: center;width: 220px;box-sizing: border-box;width: 100%;}
 .product-list-msg{display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;margin-left: 10px}
 .product-transaction-list{width:260px;height: 410px;background:#f1f1f1;color:black;border: 1px solid #ccc;}

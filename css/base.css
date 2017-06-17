@@ -897,7 +897,7 @@ a:hover {
 .tableContent .tableStyle th {
   background-color: #eeeeee;
   height: 40px;
-  min-width: 100px;
+  width: 110px;
 }
 .tableContent .tableStyle th input {
   vertical-align: middle;
@@ -1390,4 +1390,16 @@ a:hover {
 }
 #tab .tabContent .containTab.selected {
   display: block;
+}
+.label {
+  white-space: nowrap;
+}
+@media screen and (max-width: 1366px) {
+  .inputStyle {
+    width: 140px;
+    margin-right: 20px;
+  }
+  .selectStyle {
+    margin-right: 20px;
+  }
 }

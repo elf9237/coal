@@ -1,19 +1,20 @@
 .appList {
   padding: 50px 0;
   font-size: 14px;
-  align-items: center;
 }
 .appList .option {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
 }
 .appList .option label {
   font-size: 14px;
   margin-right: 8px;
+  white-space: nowrap;
 }
 .appList .option input,
 .appList .option select {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 #freightTrack .s-modal {
   width: auto;

@@ -274,3 +274,17 @@
   width: 260px;
   height: 258px;
 }
+@media screen and (max-width: 1366px) {
+  .productDetail .left > .head > .title > h3 {
+    font-size: 16px;
+  }
+  .productDetail .left > .head .productInfo ul li .dataC .data span {
+    font-size: 14px;
+  }
+  .productDetail .left > .head .productInfo ul li .dataC .unit {
+    font-size: 12px;
+  }
+  .productDetail .left > .head .productInfo ul li .dataC {
+    margin-left: 0;
+  }
+}

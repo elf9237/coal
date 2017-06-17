@@ -877,8 +877,9 @@ a:hover{
         vertical-align: middle;
         margin: 0px 5px 0 0;
       }
-      // width:100px;
-      min-width: 100px;
+      width:110px;
+      // -ms-width:auto;
+      // min-width: 100px;
       // max-width: 300px;
       &:first-child::before{
         content:"";
@@ -1363,5 +1364,18 @@ a:hover{
         display: block;
       }
     }
+  }
+}
+.label{
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1366px) {
+  .inputStyle {
+    width: 140px;
+    margin-right: 20px;
+  }
+  .selectStyle {
+    margin-right: 20px;
   }
 }

@@ -6,6 +6,8 @@
 .orderList .option {
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  flex-wrap: wrap;
 }
 .orderList .option .btn {
   margin-right: 70px;
