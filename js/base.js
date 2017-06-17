@@ -410,6 +410,6 @@ $(function(){
   $('.enterprise-step ul li').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
     let index = $(this).index();
-    $('.enterprise-body').find('.enterprise-table').eq(index).removeClass('hide').siblings().addClass('hide');
+    $('.enterprise-body').children().eq(index).removeClass('hide').siblings().addClass('hide');
   })
 })
