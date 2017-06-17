@@ -1,5 +1,48 @@
 // out: ../css/settleAccounts.css, sourcemap: false, compress: false
 .setttleAccounts{
+  .flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:40px;
+    .flowBlock{
+      &.on{
+        i {
+          background: #6db733;
+        }
+        p{
+          color:#6db733;
+        }
+      }
+      text-align: center;
+      span{
+        background:#ebebeb;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: inline-block;
+        i {
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          font-style: normal;
+          color: #fff;
+          background: #bbbbbb;
+          text-align: center;
+          line-height: 30px;
+          margin: 2.5px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .line {
+      display: inline-block;
+      width: 152px;
+      height: 1px;
+      background: #dddddd;
+      margin: -10px 5px 0px;
+    }
+  }
   color:#666666;
   margin-top: 20px;
   >.head {

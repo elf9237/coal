@@ -363,6 +363,37 @@ function addArea(){
     $(this).parents(".area-tips-alone").remove();
   })
 }
+
+//用户中心(购物车) 全选 / 添加购买数量
+function shoppingCarEvent () {
+  $(".shoppingContent .headField, .settle").find("input[type='checkbox']").click(function(){
+    var ischeck = $(this).prop("checked");
+    if(ischeck){
+      $(".shoppingCar").find("input[type='checkbox']").prop("checked",true);
+    } else {
+      $(".shoppingCar").find("input[type='checkbox']").prop("checked",false);
+    }
+  })
+  $(".shoppingList").find("input[type='checkbox']").click(function(){
+    var ischeck = $(this).prop("checked");
+    if(ischeck){
+      $(this).parents("dt").siblings("dd").find("input[type='checkbox']").prop("checked", true);
+    } else {
+      $(this).parents("dt").siblings("dd").find("input[type='checkbox']").prop("checked", false);
+    }
+  })
+  $(".shoppingInfo .reduct").click(function(){
+    var num = parseInt($(this).siblings("input").val());
+    if(num > 0) {
+      num -= 1;
+    }
+    $(this).siblings("input").val(num);
+  })
+  $(".shoppingInfo .add").click(function(){
+    var num = parseInt($(this).siblings("input").val());
+    $(this).siblings("input").val(num+1);
+  })
+}
 initMenuEvent();
 fillMoreInfo();
 getMoreCondition();

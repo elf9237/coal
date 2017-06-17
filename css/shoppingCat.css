@@ -1,0 +1,220 @@
+.shoppingCar .flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shoppingCar .flow .flowBlock {
+  text-align: center;
+}
+.shoppingCar .flow .flowBlock.on i {
+  background: #6db733;
+}
+.shoppingCar .flow .flowBlock.on p {
+  color: #6db733;
+}
+.shoppingCar .flow .flowBlock span {
+  background: #ebebeb;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.shoppingCar .flow .flowBlock span i {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  font-style: normal;
+  color: #fff;
+  background: #bbbbbb;
+  text-align: center;
+  line-height: 30px;
+  margin: 2.5px;
+  border-radius: 50%;
+}
+.shoppingCar .flow .line {
+  display: inline-block;
+  width: 152px;
+  height: 1px;
+  background: #dddddd;
+  margin: -10px 5px 0px;
+}
+.shoppingCar .shoppingContent {
+  margin-top: 25px;
+}
+.shoppingCar .shoppingContent .headField {
+  padding-left: 20px;
+  box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #dddddd;
+  background: #eeeeee;
+  color: #666666;
+  display: flex;
+  align-items: center;
+}
+.shoppingCar .shoppingContent .headField input {
+  margin: 0;
+  margin-right: 5px;
+}
+.shoppingCar .shoppingContent .headField span {
+  text-align: center;
+}
+.shoppingCar .shoppingContent .headField span.left {
+  text-align: left;
+}
+.shoppingCar .shoppingContent .headField span.flexOne {
+  flex: 1;
+}
+.shoppingCar .shoppingContent .headField span.flexThree {
+  flex: 3;
+}
+.shoppingCar .shoppingContent .shoppingList dl {
+  border-bottom: 1px solid #dddddd;
+}
+.shoppingCar .shoppingContent .shoppingList dl dt {
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #999999;
+}
+.shoppingCar .shoppingContent .shoppingList dl dt input {
+  margin-right: 10px;
+}
+.shoppingCar .shoppingContent .shoppingList dl dt span {
+  background: #26a0da;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 9px;
+  color: #fff;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd {
+  padding-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  height: 90px;
+  align-items: center;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd:last-child .checkItem:after {
+  display: none;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd:last-child .shoppingInfo {
+  border-bottom: none;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd .checkItem {
+  margin-right: 10px;
+  position: relative;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd .checkItem:after {
+  content: "";
+  display: inline-block;
+  height: 58px;
+  width: 1px;
+  border-left: 1px dashed #b4b4b4;
+  position: absolute;
+  top: 27px;
+  left: 5px;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd .shoppingInfo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  border-bottom: 1px solid #dddddd;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd .shoppingInfo span {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd .shoppingInfo span.option {
+  flex-direction: column;
+  width: 100%;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd .shoppingInfo span.left {
+  justify-content: flex-start;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd .shoppingInfo span input {
+  width: 46px;
+  height: 24px;
+  line-height: 24px;
+  border: none;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  outline: none;
+  text-align: center;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd .shoppingInfo span i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #dddddd;
+  background: #f5f5f5;
+  line-height: 24px;
+  text-align: center;
+  color: #666666;
+  font-style: normal;
+  cursor: pointer;
+}
+.shoppingCar .shoppingContent .shoppingList dl dd .shoppingInfo span:first-child {
+  flex: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+.shoppingCar .settle {
+  margin-top: 40px;
+  height: 80px;
+  border: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.shoppingCar .settle .leftOption {
+  margin-left: 20px;
+  display: flex;
+}
+.shoppingCar .settle .leftOption input {
+  margin-right: 8px;
+}
+.shoppingCar .settle .leftOption a {
+  color: #666666;
+  margin-left: 25px;
+}
+.shoppingCar .settle .rightOption {
+  display: flex;
+  align-items: center;
+}
+.shoppingCar .settle .rightOption span {
+  display: flex;
+  align-items: center;
+}
+.shoppingCar .settle .rightOption span i {
+  color: #ea3b38;
+  font-style: normal;
+  margin: 0 5px;
+}
+.shoppingCar .settle .rightOption h2 {
+  font-size: 20px;
+  color: #ea3b38;
+  font-weight: 600px;
+  margin: 0 208px 0 8px;
+}
+.shoppingCar .settle .settleBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+  background: #f35f5f;
+  font-size: 20px;
+}

@@ -180,6 +180,9 @@
 .logistics .tableContent {
   margin-top: 15px;
 }
+.logistics .orderList {
+  margin-top: 20px;
+}
 .logistics .orderList .option {
   margin-top: 30px;
 }
@@ -195,6 +198,71 @@
 .logistics .top a {
   color: #43addf;
 }
-.orderList {
+.publicSource {
+  border: none;
+}
+.publicSource h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.publicSource .option {
+  display: flex;
+  justify-content: flex-start;
   margin-top: 20px;
+  align-items: center;
+}
+.publicSource .option .field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.publicSource .option .field .labelText {
+  word-spacing: normal;
+}
+.publicSource .option .field select {
+  margin-right: 10px;
+}
+.publicSource .option .field i {
+  font-style: normal;
+  color: red;
+}
+.publicSource .option .btn {
+  height: 34px;
+  box-sizing: border-box;
+}
+.publicSource .btnOption span {
+  margin-left: 10px;
+}
+.inputSource {
+  margin-top: 60px;
+}
+.inputSource h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.inputSource .option {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  align-items: center;
+}
+.inputSource .field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0 80px 0;
+}
+.inputSource .field select {
+  margin-right: 10px;
+}
+.inputSource .field i {
+  font-style: normal;
+  color: red;
+}
+.inputSource .btn {
+  height: 34px;
+  box-sizing: border-box;
+}
+.inputSource .btnOption span {
+  margin-left: 10px;
 }

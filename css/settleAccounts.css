@@ -2,6 +2,47 @@
   color: #666666;
   margin-top: 20px;
 }
+.setttleAccounts .flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.setttleAccounts .flow .flowBlock {
+  text-align: center;
+}
+.setttleAccounts .flow .flowBlock.on i {
+  background: #6db733;
+}
+.setttleAccounts .flow .flowBlock.on p {
+  color: #6db733;
+}
+.setttleAccounts .flow .flowBlock span {
+  background: #ebebeb;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.setttleAccounts .flow .flowBlock span i {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  font-style: normal;
+  color: #fff;
+  background: #bbbbbb;
+  text-align: center;
+  line-height: 30px;
+  margin: 2.5px;
+  border-radius: 50%;
+}
+.setttleAccounts .flow .line {
+  display: inline-block;
+  width: 152px;
+  height: 1px;
+  background: #dddddd;
+  margin: -10px 5px 0px;
+}
 .setttleAccounts > .head > h2 {
   font-size: 16px;
   display: block;

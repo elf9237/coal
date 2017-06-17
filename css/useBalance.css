@@ -177,6 +177,47 @@ a:hover {
   width: 1000px;
   margin: 0 auto;
 }
+.useBalance .BalanceContent .flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 60px;
+}
+.useBalance .BalanceContent .flow .flowBlock {
+  text-align: center;
+}
+.useBalance .BalanceContent .flow .flowBlock.on i {
+  background: #6db733;
+}
+.useBalance .BalanceContent .flow .flowBlock.on p {
+  color: #6db733;
+}
+.useBalance .BalanceContent .flow .flowBlock span {
+  background: #ebebeb;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.useBalance .BalanceContent .flow .flowBlock span i {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  font-style: normal;
+  color: #fff;
+  background: #bbbbbb;
+  text-align: center;
+  line-height: 30px;
+  margin: 2.5px;
+  border-radius: 50%;
+}
+.useBalance .BalanceContent .flow .line {
+  display: inline-block;
+  width: 152px;
+  height: 1px;
+  background: #dddddd;
+  margin: -10px 5px 0px;
+}
 .useBalance .BalanceContent .title {
   display: flex;
   justify-content: flex-start;
