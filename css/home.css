@@ -252,6 +252,111 @@ body.hc_list .hc_lnav .allbtn ul{display:block}
 .mt10{margin-top: 10px}
 .mt60{margin-top: 60px}
 .mt40{margin-top: 40px}
+.mt50{margin-top: 50px}
 .icon-buy{display: inline-block;width:20px;height: 18px;background:url(../images/icon-buy-gray.png) no-repeat center;}
 .btn-gray{background:#eee;border-color:#eee;color:#000;}
 .btn-gray:hover{background:#eee;border-color:#eee;color:#000;}
+
+
+/*帮助中心*/
+.help-container{background: #eee}
+.help-content{width: 1250px;margin: 0 auto;display: flex;flex-direction: column;flex: 1;justify-content: flex-start;}
+.help-content .nav_bar{display: flex;flex-direction: row;align-items: center;}
+.help-content .nav_bar dl{flex-direction: row;display: flex;align-items: center;margin-left: 10px;color: #ccc;font-size: 16px}
+.help-content .nav_bar dl dt{font-weight: 400}
+.help-content .nav_bar dl dd{margin-left: 5px}
+.help-content .nav_bar dl dd:before{content: '/';padding-right: 5px}
+.help-content .help-content-detail{display: flex;flex-direction: row;justify-content: space-between;align-items: flex-start;}
+.help-content-detail .help-menu dl dt{padding: 20px 30px;display: flex;justify-content: space-between;align-items: center;flex-direction: row;cursor: pointer;min-width: 200px}
+.help-content-detail .help-menu{background: #fff;margin-right: 20px}
+.help-content-detail .help-menu dl dd{display: none;}
+.help-content-detail .help-menu dl.active dd{display: block;}
+.help-content-detail .help-menu dl dd a{color: #ccc;min-width: 200px;display: block;padding: 20px 30px; border-left: 2px solid #fff;border-top: 1px solid #eee}
+.help-content-detail .help-menu dl dd a:hover,.help-content-detail .help-menu dl dd.active a{border-left: 2px solid #26a0da;background: #e9f5fb;color:#26a0da;text-decoration: none}
+.icon-help{width: 10px;height: 5px;display: inline-block;}
+.icon-help-bottom{background: url(../images/icon-solid-bottom.png) no-repeat center;}
+.icon-help-top{background: url(../images/icon-solid-top.png) no-repeat center;}
+.help-content-detail{margin-bottom: 60px}
+.help-content-detail .help-menu dl:first-child dd:first-child a{border-top: none;}
+.help-content-detail .help-menu dl:first-child dd:last-child a{border-bottom: 1px solid #eee;}
+.help-detail{background: #fff;padding: 15px 20px}
+.help-detail .detail-title{padding-bottom: 20px;border-bottom: 1px solid #eee;display: flex;flex-direction: row;justify-content: space-between; }
+.help-detail .detail-title h1{font-size: 20px;color:#26a0da;}
+.help-detail .detail-title .time{align-self: flex-end;}
+.help-detail .help-detail-body{margin-top: 20px;font-size: 14px}
+.help-detail .help-detail-body p{margin: 15px 0;}
+.help-detail .help-detail-body img{width: 100%}
+
+/*忘记密码*/
+.forget-password-container{
+	background: #eee;
+	padding: 20px 0
+}
+.forget-password-wrap{
+	width: 1250px;
+	margin: auto;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	background: #fff;
+	padding-bottom: 80px
+}
+.forget-password-wrap h1{
+	margin-top: 30px;
+	font-size: 30px;
+	text-align: center;
+}
+.forget-password-step{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.forget-password-step .forget-psw-step{
+	width:240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.forget-password-step .forget-psw-step .bg-psw-step{
+	width: 240px;
+	height: 10px;
+	background: url(../images/forget-password-progress.png) no-repeat center;
+	margin-top: 20px
+}
+.forget-password-step .forget-psw-step .bg-psw-step-active{
+	background: url(../images/forget-password-progress-active.png) no-repeat center;
+}
+.forget-password-step .forget-psw-step.active{
+	color:#6db733;
+}
+.form-forget-psw{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px
+}
+.btn-danger{
+	color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-danger:hover{
+	color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+.form-forget-psw .control-label{
+	min-width: 70px;
+	height: 44px;line-height: 44px;
+	padding-top: 0px;
+}
+.form-forget-psw .form-group{
+	display: flex;
+	flex-direction: row;
+}
+.form-forget-psw .form-control{width: 300px;height: 44px}
+.form-forget-psw .btn-danger{width: 300px;height: 44px}
+.form-forget-psw .col-sm-offset-2{margin-left: 10.666667%}

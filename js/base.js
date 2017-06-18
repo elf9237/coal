@@ -411,5 +411,8 @@ $(function(){
     $(this).addClass('active').siblings().removeClass('active');
     let index = $(this).index();
     $('.enterprise-body').children().eq(index).removeClass('hide').siblings().addClass('hide');
-  })
+  });
 })
+
+
+
