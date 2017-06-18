@@ -1,0 +1,82 @@
+.baseInfo #tab {
+  margin-top: 30px;
+  color: #666666;
+}
+.baseInfo #tab .deliverOption {
+  margin-top: 50px;
+}
+.baseInfo #tab .deliverOption .titleTXT {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.baseInfo #tab .deliverOption .filedContent .field {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.baseInfo #tab .deliverOption .filedContent .field .lable {
+  margin-right: 10px;
+}
+.baseInfo #tab .deliverOption .filedContent .field .flex1 {
+  flex: 1;
+}
+.baseInfo #tab .deliverOption .filedContent .field .option a {
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #26a0da;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.baseInfo #tab .orderParticulars .titleTXT {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.baseInfo #tab .orderParticulars .particularsC {
+  padding: 25px 15px;
+  border: 1px solid #ccc;
+  line-height: 30px;
+  text-align: right;
+  font-size: 14px;
+}
+.baseInfo #tab .orderParticulars .particularsC h2 {
+  line-height: 30px;
+  color: #f5255e;
+  font-size: 14px;
+}
+.baseInfo #tab .shipmentRecord {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.baseInfo #tab .shipmentRecord .info p {
+  line-height: 25px;
+}
+.baseInfo #tab .shipmentRecord .recordTabel {
+  margin-bottom: 15px;
+}
+#showUserInfo .s-modal {
+  width: 400px;
+}
+#showUserInfo .block {
+  font-size: 14px;
+  line-height: 25px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+#showUserInfo .block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#editPayWap .payList ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#editPayWap .payList ul li {
+  width: 50%;
+  margin-bottom: 15px;
+  font-size: 14px;
+}

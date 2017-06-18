@@ -205,6 +205,9 @@ a:hover {
 ._inlineBlock {
   display: inline-block;
 }
+.noborder {
+  border: none!important;
+}
 .icon-address {
   display: inline-block;
   width: 40px;
@@ -1370,18 +1373,19 @@ a:hover {
   font-style: normal;
   padding-right: 5px;
 }
-#tab ul {
+#tab > ul {
   border-bottom: 1px solid #cccccc;
   overflow: auto;
 }
-#tab ul li {
+#tab > ul > li {
   padding: 10px 20px;
   color: #666666;
   background: #eeeeee;
   float: left;
+  margin-right: 2px;
   cursor: pointer;
 }
-#tab ul li.on {
+#tab > ul > li.on {
   background: #26a0da;
   color: #fff;
 }
